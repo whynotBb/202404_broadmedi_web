@@ -1,0 +1,31 @@
+.btn {
+  padding: 0 1.6rem;
+  text-align: center;
+  height: 4rem;
+  line-height: 4rem;
+  border-radius: 8px;
+  background: rgba(50, 115, 220, 0.12);
+  color: rgba(0, 0, 0, 0.54);
+}
+.btn.primary {
+  background: #27bfb0;
+  color: #fff;
+}
+.btn.upload {
+  color: #fff;
+  padding-left: 4.5rem;
+  background: #27bfb0 url(../../images/icon_upload.svg) no-repeat left 1.6rem center;
+}
+.btn.sm {
+  height: 3.4rem;
+  line-height: 3.4rem;
+}
+.btn.md {
+  height: 4.2rem;
+  line-height: 4.2rem;
+}
+.btn.lg {
+  height: 5rem;
+  line-height: 5rem;
+  font-weight: 500;
+}

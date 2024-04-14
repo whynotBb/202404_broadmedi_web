@@ -1,0 +1,67 @@
+.subWrapper {
+  width: 8rem;
+  height: 100%;
+  padding: 1.2rem 0;
+  display: flex;
+  flex-direction: column;
+}
+.subWrapper h1 {
+  padding: 2rem;
+  width: 8rem;
+  height: 8rem;
+  text-indent: -999999px;
+  color: transparent;
+  font-size: 0;
+  background: url(../../../../images/Logo.svg) no-repeat center;
+}
+.subWrapper h2 {
+  padding: 1rem 0;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  font-weight: 700;
+}
+.subWrapper nav {
+  flex: 1;
+}
+.subWrapper nav ul li {
+  margin-bottom: 0.4rem;
+  padding: 1.4rem 2.8rem;
+  width: 100%;
+  height: 5.2rem;
+  text-indent: -999999px;
+  color: transparent;
+  font-size: 0;
+  border-radius: 0.8rem;
+  transition: all 0.3s;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: transparent;
+}
+.subWrapper nav ul li.home {
+  background-image: url(../../../../images/snb_home.svg);
+}
+.subWrapper nav ul li.chatting {
+  background-image: url(../../../../images/snb_chat.svg);
+}
+.subWrapper nav ul li.hospital {
+  background-image: url(../../../../images/snb_hospital.svg);
+}
+.subWrapper nav ul li.chart {
+  background-image: url(../../../../images/snb_chart.svg);
+}
+.subWrapper nav ul li.mypage {
+  background-image: url(../../../../images/snb_user.svg);
+}
+.subWrapper nav ul li.on {
+  background-color: #27bfb0;
+}
+.subWrapper .userSetting {
+  width: 100%;
+  height: 8.6rem;
+  text-indent: -999999px;
+  color: transparent;
+  font-size: 0;
+  background: url(../../../../images/user_default.svg) no-repeat center;
+}

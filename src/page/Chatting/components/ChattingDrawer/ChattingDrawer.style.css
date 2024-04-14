@@ -1,0 +1,282 @@
+.chattingDrawerWrap {
+  width: 48.2rem;
+  border-left: 1px solid #efefef;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.chattingDrawerWrap .title .btn_prev {
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 1.6rem;
+  width: 3rem;
+  height: 3rem;
+  font-size: 0;
+  color: transparent;
+  text-indent: -999999px;
+  background: url(../../../../images/icon_arrow_left.svg) no-repeat center;
+}
+.chattingDrawerWrap .drawerProfile {
+  width: 100%;
+  padding: 5rem 0 1.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.2rem;
+}
+.chattingDrawerWrap .drawerProfile .name {
+  margin-top: 1rem;
+}
+.chattingDrawerWrap .drawerProfile .activeHistory {
+  font-weight: 350;
+  color: #65676b;
+}
+.chattingDrawerWrap .drawerProfile .userSetting {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-align: center;
+  gap: 1rem;
+  padding-top: 0.2rem;
+}
+.chattingDrawerWrap .drawerProfile .userSetting li {
+  width: 7.2rem;
+  padding-top: 4.8rem;
+  cursor: pointer;
+  position: relative;
+}
+.chattingDrawerWrap .drawerProfile .userSetting li.btn_profile::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 2rem;
+  background: #efefef;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.chattingDrawerWrap .drawerProfile .userSetting li.btn_profile::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: url(../../../../images/profile_user.svg) no-repeat center;
+}
+.chattingDrawerWrap .drawerProfile .userSetting li.btn_alarm {
+  background: url(../../../../images/icon_alarm.svg) no-repeat center top;
+}
+.chattingDrawerWrap .stepInfo {
+  width: 100%;
+  padding: 1.6rem 3.2rem;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.87);
+}
+.chattingDrawerWrap .stepInfo .stepBar {
+  display: flex;
+  align-items: center;
+  padding-top: 1.7rem;
+  gap: 0.4rem;
+}
+.chattingDrawerWrap .stepInfo .stepBar li {
+  flex: 1;
+  height: 0.8rem;
+  border-radius: 1.6rem;
+  background: rgba(0, 0, 0, 0.12);
+}
+.chattingDrawerWrap .stepInfo .stepBar li.on {
+  background: #27bfb0;
+}
+.chattingDrawerWrap .drawerMenuWrap {
+  flex: 1;
+  padding: 1.2rem 3rem;
+}
+.chattingDrawerWrap .drawerMenuWrap li {
+  cursor: pointer;
+  padding: 1.1rem 0;
+  font-weight: 500;
+  line-height: 2.2rem;
+  background: url(../../../../images/icon_arrow_right.svg) no-repeat right center;
+}
+.chattingDrawerWrap .drawerBottom {
+  border-top: 1px solid #d9d9d9;
+  height: 7.7rem;
+  padding: 0 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.chattingDrawerWrap .drawerBottom .out {
+  cursor: pointer;
+  width: 2.4rem;
+  height: 2.4rem;
+  text-indent: -999999px;
+  color: transparent;
+  font-size: 0;
+  background: url(../../../../images/icon_logout.svg) no-repeat center;
+}
+.chattingDrawerWrap .btnHiddenMenu {
+  width: 3.6rem;
+  height: 3.6rem;
+  background: url(../../../../images/icon_more_vertical.svg) no-repeat center;
+  position: absolute;
+  top: 6.7rem;
+  right: 3rem;
+  cursor: pointer;
+}
+.chattingDrawerWrap .hiddenMenu {
+  position: absolute;
+  top: 9.7rem;
+  right: 6rem;
+  width: 10rem;
+  border: 1px solid rgba(0, 0, 0, 0.38);
+  border-radius: 1rem;
+  background: #fff;
+  display: none;
+}
+.chattingDrawerWrap .hiddenMenu li {
+  cursor: pointer;
+  padding: 1rem 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.3rem;
+  color: rgba(0, 0, 0, 0.87);
+  text-align: center;
+}
+.chattingDrawerWrap .hiddenMenu.on {
+  display: block;
+}
+.chattingDrawerWrap .subTitle {
+  font-weight: 500;
+  line-height: 2.2rem;
+  padding: 0.5rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.chattingDrawerWrap .tagWrap {
+  padding: 1rem 3rem;
+}
+.chattingDrawerWrap .tagWrap ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+.chattingDrawerWrap .tagWrap ul li {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.87);
+  height: 3rem;
+  line-height: 3rem;
+  padding: 0 0.8rem;
+  background: rgba(0, 0, 0, 0.06);
+  border-radius: 1.6rem;
+}
+
+.postWrap {
+  padding: 1.6rem 3rem;
+  height: calc(100% - 12.8rem);
+  overflow-x: auto;
+}
+.postWrap .postBox {
+  cursor: pointer;
+  min-height: 9.3rem;
+  padding: 16px;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  margin-bottom: 2rem;
+  line-height: 2.2rem;
+  color: rgba(0, 0, 0, 0.87);
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+}
+.postWrap .postBox .imgBox {
+  width: 4rem;
+  height: 4rem;
+  background: rgba(0, 0, 0, 0.38);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.4rem;
+  overflow: hidden;
+}
+.postWrap .postBox .txtBox {
+  flex: 1;
+}
+.postWrap .postBox .date {
+  position: absolute;
+  right: 1.6rem;
+  bottom: 1.6rem;
+  font-size: 1.1rem;
+  line-height: 1.3rem;
+  color: rgba(0, 0, 0, 0.54);
+  text-align: right;
+  width: 100%;
+}
+
+.postDetailWrap {
+  padding: 3rem 12rem 0;
+}
+.postDetailWrap .postTitle {
+  line-height: 5.2rem;
+  color: rgba(0, 0, 0, 0.87);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+.postDetailWrap .postTitle input {
+  border: none;
+}
+.postDetailWrap .contentsWrap .imgBox {
+  height: 16.4rem;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.postDetailWrap .contentsWrap .imgBox img {
+  width: 100%;
+  height: 100%;
+}
+.postDetailWrap .contentsWrap .contentsBox {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 0.4rem;
+  padding: 0.8rem;
+  line-height: 2.2rem;
+  color: rgba(0, 0, 0, 0.87);
+  height: 26.6rem;
+  overflow-y: auto;
+}
+.postDetailWrap .contentsTitle {
+  font-weight: 500;
+  padding: 1.5rem 0 2rem;
+  display: flex;
+  align-items: center;
+}
+.postDetailWrap .contentsTitle small {
+  font-size: 1.1rem;
+  line-height: 2.2rem;
+  padding-left: 0.4rem;
+}
+.postDetailWrap .fileBox {
+  padding-bottom: 4rem;
+}
+
+.modalBottom {
+  display: flex;
+  gap: 1rem;
+  padding: 1.5rem 5.8rem;
+}
+.modalBottom button {
+  flex: 1;
+}

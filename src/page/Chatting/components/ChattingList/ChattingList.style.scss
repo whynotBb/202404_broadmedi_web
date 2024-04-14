@@ -1,0 +1,58 @@
+.chattingListWrap {
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    width: 38rem;
+    .chattingListBox {
+        height: calc(100% - 12.8rem);
+        overflow: auto;
+        .item {
+            padding: 1.2rem 4rem 1.2rem 8rem;
+            position: relative;
+            font-size: 1.1rem;
+            font-weight: 400;
+            line-height: 1.3rem;
+            cursor: pointer;
+            &.on {
+                background: #efefef;
+            }
+            h4 {
+                font-size: 1.6rem;
+                font-weight: 400;
+                line-height: 2.2rem;
+                margin-bottom: 1rem;
+            }
+            p {
+                color: #737373;
+                width: 100%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            .profileBox {
+                position: absolute;
+                top: 1.2rem;
+                left: 1.2rem;
+                width: 5.6rem;
+                height: 5.6rem;
+            }
+            .messageNum {
+                color: #fff;
+                background: #27bfb0;
+                width: 2.4rem;
+                height: 2.4rem;
+                line-height: 2.2rem;
+                text-align: center;
+                border-radius: 1.2rem;
+                position: absolute;
+                right: 1.2rem;
+                bottom: 1.2rem;
+            }
+            .time {
+                color: rgba(0, 0, 0, 0.54);
+                position: absolute;
+                top: 1.2rem;
+                right: 1.2rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.chattingSendWrap {
+  height: 7.6rem;
+  padding: 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+.chattingSendWrap .chattingInput {
+  height: 4.5rem;
+  display: flex;
+  padding: 0.2rem 2.4rem;
+  flex: 1;
+  border-radius: 2.8rem;
+  background: #fff;
+  box-shadow: 1.226px 1.226px 6.132px 0px rgba(0, 0, 0, 0.12);
+}
+.chattingSendWrap .chattingInput input {
+  border: none;
+  width: 100%;
+  padding: 0 0.8rem;
+  font-weight: 300;
+}
+.chattingSendWrap .chattingInput button {
+  width: 4rem;
+  height: 4rem;
+  background: url(../../../../../images/icon_plus.svg) no-repeat center;
+  font-size: 0;
+  color: transparent;
+  text-indent: -999999px;
+}
+.chattingSendWrap .chattingSend {
+  font-size: 0;
+  color: transparent;
+  text-indent: -999999px;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 2rem;
+  background: #27bfb0 url(../../../../../images/icon_send.svg) no-repeat center;
+}

@@ -1,0 +1,144 @@
+.chattingRoomWrap {
+  width: 103.8rem;
+}
+.chattingRoomWrap .chattingRoomHeader {
+  height: 7.6rem;
+  padding: 1rem 1.6rem;
+  border-bottom: 1px solid #efefef;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.chattingRoomWrap .chattingRoomHeader h3 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.2rem;
+}
+.chattingRoomWrap .chattingRoomHeader .shortcut {
+  display: flex;
+  align-items: center;
+  gap: 3.5rem;
+  margin-left: auto;
+}
+.chattingRoomWrap .chattingRoomHeader .shortcut li {
+  text-indent: -999999px;
+  color: transparent;
+  font-size: 0;
+  width: 3.6rem;
+  height: 3.6rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+.chattingRoomWrap .chattingRoomHeader .shortcut li.call {
+  background-image: url(../../../../images/icon_call.svg);
+}
+.chattingRoomWrap .chattingRoomHeader .shortcut li.video {
+  background-image: url(../../../../images/icon_video.svg);
+}
+.chattingRoomWrap .chattingRoomHeader .shortcut li.more {
+  background-image: url(../../../../images/icon_more.svg);
+}
+.chattingRoomWrap .chattingRoomBody {
+  height: calc(100% - 15.2rem);
+  overflow: auto;
+}
+.chattingRoomWrap .chattingRoomBody .dateTime {
+  text-align: center;
+  padding: 2rem 1.6rem;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.1rem;
+}
+
+.msgBox {
+  padding: 0.4rem 1.6rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.2rem;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  gap: 0.7rem;
+  margin-bottom: 0.8rem;
+}
+.msgBox .name {
+  font-size: 1.2rem;
+  line-height: 1.3rem;
+  margin-bottom: 0.4rem;
+  position: absolute;
+  top: 0;
+  left: 7.2rem;
+}
+.msgBox .time {
+  font-size: 1.1rem;
+  line-height: 1.3rem;
+}
+.msgBox .num {
+  font-size: 1.1rem;
+  line-height: 1.3rem;
+  color: #27bfb0;
+  margin-bottom: 0.4rem;
+}
+.msgBox .global {
+  flex-shrink: 0;
+  width: 1.3rem;
+  height: 1.3rem;
+  background: url(../../../../images/icon_global.svg) no-repeat center;
+}
+.msgBox .msg {
+  padding: 0.8rem 1.6rem;
+  border-radius: 1.6rem;
+  background: rgba(27, 189, 200, 0.38);
+  width: auto;
+  display: inline-block;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.12);
+}
+.msgBox .noti {
+  max-width: 28rem;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 1.6rem;
+  margin-right: 1rem;
+}
+.msgBox .noti h5 {
+  width: 100%;
+  padding: 0.4rem 1.6rem;
+  border-radius: 1.6rem 1.6rem 0 0;
+  color: #fff;
+  font-weight: 500;
+  background: #27bfb0;
+}
+.msgBox .noti .notiMsg {
+  padding: 2.4rem 1.6rem;
+}
+.msgBox .noti .notiBtn {
+  cursor: pointer;
+  height: 4rem;
+  padding: 0 1.6rem 0 5rem;
+  border-radius: 0 0 1.6rem 1.6rem;
+  font-weight: 500;
+  line-height: 4rem;
+  background: url(../../../../images/icon_memo.svg) no-repeat left 2.1rem center;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+.msgBox.yourMsg {
+  padding-left: 7.2rem;
+  padding-top: 2.1rem;
+}
+.msgBox.yourMsg .profileBox {
+  position: absolute;
+  top: 0.4rem;
+  left: 1.3rem;
+}
+.msgBox.yourMsg .msg {
+  background: #efefef;
+  border-radius: 1.2rem;
+}
+.msgBox.myMsg {
+  justify-content: flex-start;
+  flex-direction: row-reverse;
+}
+.msgBox.myMsg .info {
+  text-align: right;
+}

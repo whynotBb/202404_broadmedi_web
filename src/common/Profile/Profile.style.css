@@ -1,0 +1,71 @@
+.profile {
+    position: relative;
+    width: 5.6rem;
+    height: 5.6rem;
+}
+
+.profile .user {
+    width: 4.8rem;
+    height: 4.8rem;
+    border-radius: 2.4rem;
+    overflow: hidden;
+    margin: 0.4rem auto;
+}
+.profile .user img {
+    width: 4.8rem;
+    height: 4.8rem;
+}
+.profile .nation {
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 1.1rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item .profile .nation img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+/* 채팅방 서랍 프로필 사이즈 스타일 */
+.profile.md {
+    width: 7.2rem;
+    height: 7.2rem;
+}
+.profile.md .user {
+    width: 6.2rem;
+    height: 6.2rem;
+    border-radius: 3.2rem;
+    overflow: hidden;
+    margin: 0.4rem auto;
+}
+.profile.md .user img {
+    width: 6.2rem;
+    height: 6.2rem;
+}
+.profile.md .nation {
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 1.4rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profile.md .nation img {
+    width: 2.6rem;
+    height: 2.6rem;
+    border-radius: 1.3rem;
+    overflow: hidden;
+}
