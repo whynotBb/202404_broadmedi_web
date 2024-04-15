@@ -280,3 +280,30 @@
 .modalBottom button {
   flex: 1;
 }
+
+.estimateWrap {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.1rem;
+  color: rgba(0, 0, 0, 0.87);
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  justify-content: center;
+  height: 4.4rem;
+  padding: 0 3rem;
+}
+.estimateWrap .dateTime {
+  font-size: 1.1rem;
+  line-height: 1.3rem;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.drawerBtnWrap {
+  padding: 4.5rem 3rem 0;
+  display: flex;
+}
+.drawerBtnWrap button {
+  flex: 1;
+}

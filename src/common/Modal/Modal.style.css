@@ -18,6 +18,7 @@
 
 .modalContents {
   width: 64rem;
+  max-height: 90vh;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -41,6 +42,10 @@
   color: transparent;
   font-size: 9;
   background: url(../../images/icon_close.svg) no-repeat center;
+}
+.modalContents .modalBody {
+  max-height: 74.7rem;
+  overflow-y: auto;
 }
 .modalContents .modalBody .modalTitle {
   text-align: center;

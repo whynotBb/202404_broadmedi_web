@@ -1,0 +1,105 @@
+.formWrap {
+  padding: 2.6rem 6.2rem 0;
+}
+.formWrap .formTitle {
+  height: 4.4rem;
+  border-bottom: 1px solid #000;
+}
+.formWrap .formItem {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+}
+.formWrap .formItem h5 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.87);
+  width: 15.2rem;
+}
+.formWrap input[type=text],
+.formWrap input[type=number] {
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  padding: 0 1.2rem;
+  height: 4.6rem;
+  line-height: 4.6rem;
+  flex: 1;
+}
+.formWrap input[type=text]:-moz-read-only, .formWrap input[type=number]:-moz-read-only {
+  background: rgba(0, 0, 0, 0.06);
+}
+.formWrap input[type=text]:read-only,
+.formWrap input[type=number]:read-only {
+  background: rgba(0, 0, 0, 0.06);
+}
+.formWrap .textBoxItem {
+  padding-top: 2.8rem;
+}
+.formWrap .textBoxItem p {
+  line-height: 2.1rem;
+  font-size: 1.4rem;
+  color: rgba(0, 0, 0, 0.87);
+  margin-bottom: 0.8rem;
+}
+.formWrap .textBoxItem .textBox {
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  padding: 0.8rem;
+}
+.formWrap .textBoxItem .textBox .inner {
+  line-height: 2.2rem;
+  color: rgba(0, 0, 0, 0.54);
+  width: 100%;
+  white-space: normal;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+.formWrap .textBoxItem .textBox .more {
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.2rem;
+  color: #1bbdc8;
+  display: block;
+}
+.formWrap .textBoxItem .textBox.open .inner {
+  white-space: initial;
+  display: initial;
+  -webkit-line-clamp: initial;
+  -webkit-box-orient: initial;
+  overflow: initial;
+}
+.formWrap h6 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.2rem;
+  padding: 2.8rem 0 1.4rem;
+}
+.formWrap .infoItem {
+  padding-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.2rem;
+}
+.formWrap .infoItem h5 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.2rem;
+}
+.formWrap .infoItem span {
+  height: 3.4rem;
+  line-height: 3.2rem;
+  border: 1px solid #27bfb0;
+  border-radius: 5px;
+  padding: 0 0.5rem;
+  color: rgba(0, 0, 0, 0.87);
+}
+.formWrap .infoItem span.noData {
+  color: rgba(0, 0, 0, 0.38);
+}

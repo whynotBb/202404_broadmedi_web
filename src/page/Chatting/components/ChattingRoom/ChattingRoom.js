@@ -5,6 +5,8 @@ import profile01 from "../../../../images/profile_img_1.png";
 import flag01 from "../../../../images/flag_1.svg";
 import ChattingSend from "./ChattingSend/ChattingSend";
 import Modal from "../../../../common/Modal/Modal";
+import FormWrap from "../../../../common/FormWrap/FormWrap";
+import HealthChart from "./HealthChart";
 
 const ChattingRoom = () => {
     // 건강차트 모달 여닫기
@@ -94,7 +96,8 @@ const ChattingRoom = () => {
                 className={openModal ? "open" : ""}
                 openModalHandler={openModalHandler}
             >
-                <h3 className="modalTitle">게시글</h3>
+                <h3 className="modalTitle">건강차트</h3>
+                <HealthChart />
             </Modal>
         </div>
     );
