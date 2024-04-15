@@ -1,0 +1,85 @@
+.scheduleBoxWrap {
+  position: absolute;
+  top: 0;
+  left: 8rem;
+  background: #fff;
+  width: calc(100% - 56.2rem);
+  height: 100%;
+}
+.scheduleBoxWrap .title {
+  font-size: 2.8rem;
+  line-height: 3.4rem;
+  font-weight: 700;
+  height: 7.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.scheduleBoxWrap .close {
+  font-size: 0;
+  color: transparent;
+  text-indent: -999999px;
+  width: 3.2rem;
+  height: 3.2rem;
+  background: url(../../../../images/icon_close.svg) no-repeat center;
+}
+.scheduleBoxWrap .calendarWrap .fc {
+  font-family: "Noto Sans KR", sans-serif;
+}
+.scheduleBoxWrap .calendarWrap .fc .fc-toolbar {
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+  gap: 1.4rem;
+}
+.scheduleBoxWrap .calendarWrap .fc .fc-toolbar .fc-today-button {
+  display: none;
+}
+.scheduleBoxWrap .calendarWrap .fc .fc-toolbar .fc-button {
+  background: none;
+  border: none;
+  width: 3.6rem;
+  height: 3.6rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  outline: none;
+  box-shadow: none;
+}
+.scheduleBoxWrap .calendarWrap .fc .fc-toolbar .fc-button span {
+  display: none;
+}
+.scheduleBoxWrap .calendarWrap .fc .fc-toolbar .fc-button.fc-prev-button {
+  background-image: url(../../../../images/calendar_left.svg);
+}
+.scheduleBoxWrap .calendarWrap .fc .fc-toolbar .fc-button.fc-next-button {
+  background-image: url(../../../../images/calendar_right.svg);
+}
+.scheduleBoxWrap .calendarWrap .fc .fc-toolbar-title {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.2rem;
+  color: rgba(0, 0, 0, 0.87);
+}
+.scheduleBoxWrap .calendarWrap .fc table {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 3rem;
+}
+.scheduleBoxWrap .calendarWrap .fc table .fc-col-header-cell-cushion {
+  padding: 0.8rem 0;
+}
+.scheduleBoxWrap .calendarWrap .fc table .fc-daygrid-day-number {
+  padding: 0;
+}
+.scheduleBoxWrap .calendarWrap .fc table th {
+  border: none;
+}
+.scheduleBoxWrap .calendarWrap .fc table th.columnheader {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+.scheduleBoxWrap .calendarWrap .fc table .fc-daygrid-day-top {
+  justify-content: center;
+}
+.scheduleBoxWrap .calendarWrap .fc table .fc-theme-standard td,
+.scheduleBoxWrap .calendarWrap .fc table .fc-theme-standard th {
+  border-color: rgba(0, 0, 0, 0.12) !important;
+}

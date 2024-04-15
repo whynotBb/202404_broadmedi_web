@@ -1,0 +1,88 @@
+.scheduleBoxWrap {
+    position: absolute;
+    top: 0;
+    left: 8rem;
+    background: #fff;
+    width: calc(100% - 56.2rem);
+    height: 100%;
+    .title {
+        font-size: 2.8rem;
+        line-height: 3.4rem;
+        font-weight: 700;
+        height: 7.6rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .close {
+        font-size: 0;
+        color: transparent;
+        text-indent: -999999px;
+        width: 3.2rem;
+        height: 3.2rem;
+        background: url(../../../../images/icon_close.svg) no-repeat center;
+    }
+    .calendarWrap {
+        .fc {
+            font-family: 'Noto Sans KR', sans-serif;
+            .fc-toolbar {
+                justify-content: flex-end;
+                flex-direction: row-reverse;
+                gap: 1.4rem;
+                .fc-today-button {
+                    display: none;
+                }
+                .fc-button {
+                    background: none;
+                    border: none;
+                    width: 3.6rem;
+                    height: 3.6rem;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    outline: none;
+                    box-shadow: none;
+                    span {
+                        display: none;
+                    }
+                    &.fc-prev-button {
+                        background-image: url(../../../../images/calendar_left.svg);
+                    }
+                    &.fc-next-button {
+                        background-image: url(../../../../images/calendar_right.svg);
+                    }
+                }
+            }
+            .fc-toolbar-title {
+                font-size: 2rem;
+                font-weight: 700;
+                line-height: 2.2rem;
+                color: rgba(0, 0, 0, 0.87);
+            }
+            table {
+                font-size: 1.6rem;
+                font-weight: 500;
+                line-height: 3rem;
+                .fc-col-header-cell-cushion {
+                    padding: 0.8rem 0;
+                }
+                .fc-daygrid-day-number {
+                    padding: 0;
+                }
+                th {
+                    border: none;
+
+                    &.columnheader {
+                        border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+                    }
+                }
+                .fc-daygrid-day-top {
+                    justify-content: center;
+                }
+                .fc-theme-standard td,
+                .fc-theme-standard th {
+                    border-color: rgba(0, 0, 0, 0.12) !important;
+                }
+            }
+        }
+    }
+}

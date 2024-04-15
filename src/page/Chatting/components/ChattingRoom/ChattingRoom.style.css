@@ -41,7 +41,10 @@
 }
 .chattingRoomWrap .chattingRoomBody {
   height: calc(100% - 15.2rem);
+  width: 100%;
   overflow: auto;
+  display: flex;
+  flex-direction: column;
 }
 .chattingRoomWrap .chattingRoomBody .dateTime {
   text-align: center;
@@ -53,6 +56,7 @@
 }
 
 .msgBox {
+  max-width: 60rem;
   padding: 0.4rem 1.6rem;
   font-size: 1.6rem;
   font-weight: 400;
@@ -138,6 +142,7 @@
 .msgBox.myMsg {
   justify-content: flex-start;
   flex-direction: row-reverse;
+  margin-left: auto;
 }
 .msgBox.myMsg .info {
   text-align: right;
