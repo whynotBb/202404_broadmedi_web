@@ -1,8 +1,28 @@
 .formWrap {
     padding: 2.6rem 6.2rem 0;
+    em {
+        color: #ff3860;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 2.2rem;
+        padding-left: 0.5rem;
+        display: inline-block;
+    }
     .formTitle {
         height: 4.4rem;
         border-bottom: 1px solid #000;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        i {
+            color: #272727;
+            font-size: 1.6rem;
+            font-weight: 500;
+            line-height: 2.2rem;
+            em {
+                color: #ff3860;
+            }
+        }
     }
     .formItem {
         display: flex;
@@ -15,8 +35,8 @@
             width: 15.2rem;
         }
     }
-    input[type="text"],
-    input[type="number"] {
+    input[type='text'],
+    input[type='number'] {
         border-radius: 8px;
         border: 1px solid rgba(0, 0, 0, 0.12);
         padding: 0 1.2rem;
@@ -26,7 +46,11 @@
         &:read-only {
             background: rgba(0, 0, 0, 0.06);
         }
+        &::placeholder {
+            color: rgba(0, 0, 0, 0.54);
+        }
     }
+
     .textBoxItem {
         padding-top: 2.8rem;
         p {

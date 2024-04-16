@@ -1,0 +1,57 @@
+.dropdownBox {
+    width: 34.5rem;
+    position: relative;
+    p {
+        border-radius: 8px;
+        border: 1px solid rgba(0, 0, 0, 0.12);
+        background: #fff;
+        padding: 0 1.2rem;
+        height: 4.2rem;
+        line-height: 4rem;
+        width: 100%;
+        cursor: pointer;
+        &::before {
+            content: '';
+            width: 1.5rem;
+            height: 1.5rem;
+            background: url(../../images/icon_dropdown.svg);
+            position: absolute;
+            top: 1rem;
+            right: 1.2rem;
+            transition: all 0.3s;
+        }
+    }
+    &.on {
+        p:before {
+            transform: rotate(180deg);
+        }
+    }
+    ul {
+        display: none;
+        position: absolute;
+        top: 4.3rem;
+        border-radius: 0.8rem;
+        overflow: hidden;
+        background: #fff;
+        width: 34.5rem;
+        border-radius: 8px;
+        border: 1px solid rgba(0, 0, 0, 0.12);
+        box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.12);
+        li {
+            font-size: 1.6rem;
+            font-weight: 400;
+            color: rgba(0, 0, 0, 0.87);
+            height: 4.6rem;
+            line-height: 4.6rem;
+            padding: 0 1.6rem;
+            background: #fff;
+            cursor: pointer;
+            &:hover {
+                background: rgba(50, 115, 220, 0.12);
+            }
+        }
+        &.on {
+            display: block;
+        }
+    }
+}

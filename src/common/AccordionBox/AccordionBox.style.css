@@ -1,0 +1,26 @@
+.accordionBox {
+  padding: 1rem 0;
+}
+.accordionBox .accordionTitle {
+  cursor: pointer;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.87);
+  height: 4.8rem;
+  line-height: 4.8rem;
+  font-size: 1.6rem;
+  position: relative;
+}
+.accordionBox .accordionTitle::before {
+  content: "";
+  position: absolute;
+  top: 1.6rem;
+  right: 1.7rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: block;
+  background: url(../../images/icon_dropdown.svg) no-repeat center;
+  transition: all 0.3s;
+}
+.accordionBox.open .accordionTitle::before {
+  transform: rotate(180deg);
+}

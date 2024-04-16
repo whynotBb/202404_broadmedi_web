@@ -272,6 +272,21 @@
   padding-bottom: 4rem;
 }
 
+.fileBox.wide {
+  padding: 1.4rem 6.3rem 4rem;
+}
+.fileBox .contentsTitle {
+  font-weight: 500;
+  padding: 1.5rem 0 2rem;
+  display: flex;
+  align-items: center;
+}
+.fileBox .contentsTitle small {
+  font-size: 1.1rem;
+  line-height: 2.2rem;
+  padding-left: 0.4rem;
+}
+
 .modalBottom {
   display: flex;
   gap: 1rem;
@@ -293,11 +308,24 @@
   justify-content: center;
   height: 4.4rem;
   padding: 0 3rem;
+  position: relative;
+}
+.estimateWrap p {
+  cursor: pointer;
 }
 .estimateWrap .dateTime {
   font-size: 1.1rem;
   line-height: 1.3rem;
   color: rgba(0, 0, 0, 0.54);
+}
+.estimateWrap.noFile p {
+  color: rgba(0, 0, 0, 0.54);
+}
+.estimateWrap .btnHiddenMenu {
+  top: 0;
+}
+.estimateWrap .hiddenMenu {
+  top: 3rem;
 }
 
 .drawerBtnWrap {

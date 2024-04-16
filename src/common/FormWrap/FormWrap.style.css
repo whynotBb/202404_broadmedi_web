@@ -1,9 +1,29 @@
 .formWrap {
   padding: 2.6rem 6.2rem 0;
 }
+.formWrap em {
+  color: #ff3860;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.2rem;
+  padding-left: 0.5rem;
+  display: inline-block;
+}
 .formWrap .formTitle {
   height: 4.4rem;
   border-bottom: 1px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.formWrap .formTitle i {
+  color: #272727;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.2rem;
+}
+.formWrap .formTitle i em {
+  color: #ff3860;
 }
 .formWrap .formItem {
   display: flex;
@@ -31,6 +51,13 @@
 .formWrap input[type=text]:read-only,
 .formWrap input[type=number]:read-only {
   background: rgba(0, 0, 0, 0.06);
+}
+.formWrap input[type=text]::-moz-placeholder, .formWrap input[type=number]::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.54);
+}
+.formWrap input[type=text]::placeholder,
+.formWrap input[type=number]::placeholder {
+  color: rgba(0, 0, 0, 0.54);
 }
 .formWrap .textBoxItem {
   padding-top: 2.8rem;
