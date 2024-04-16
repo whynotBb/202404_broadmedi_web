@@ -1,6 +1,7 @@
 .dropdownBox {
     width: 34.5rem;
     position: relative;
+
     p {
         border-radius: 8px;
         border: 1px solid rgba(0, 0, 0, 0.12);
@@ -11,32 +12,34 @@
         width: 100%;
         cursor: pointer;
         &::before {
-            content: '';
+            content: "";
             width: 1.5rem;
             height: 1.5rem;
             background: url(../../images/icon_dropdown.svg);
             position: absolute;
-            top: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
             right: 1.2rem;
             transition: all 0.3s;
         }
     }
     &.on {
         p:before {
-            transform: rotate(180deg);
+            transform: translateY(-50%) rotate(180deg);
         }
     }
     ul {
+        width: 34.5rem;
         display: none;
         position: absolute;
         top: 4.3rem;
         border-radius: 0.8rem;
         overflow: hidden;
         background: #fff;
-        width: 34.5rem;
         border-radius: 8px;
         border: 1px solid rgba(0, 0, 0, 0.12);
         box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.12);
+        z-index: 10;
         li {
             font-size: 1.6rem;
             font-weight: 400;
@@ -52,6 +55,12 @@
         }
         &.on {
             display: block;
+        }
+    }
+    &.sm {
+        width: 9.8rem;
+        ul {
+            width: 9.8rem;
         }
     }
 }

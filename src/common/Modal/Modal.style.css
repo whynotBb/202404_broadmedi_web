@@ -25,7 +25,7 @@
   transform: translate(-50%, -50%);
   background: #fff;
   border-radius: 1.6rem;
-  padding-bottom: 6.9rem;
+  padding-bottom: 5.1rem;
 }
 .modalContents .modalHeader {
   width: 100%;
@@ -44,8 +44,7 @@
   background: url(../../images/icon_close.svg) no-repeat center;
 }
 .modalContents .modalBody {
-  max-height: 74.7rem;
-  overflow-y: auto;
+  height: 100%;
 }
 .modalContents .modalBody .modalTitle {
   text-align: center;
@@ -53,4 +52,12 @@
   line-height: 4.8rem;
   font-size: 2.8rem;
   font-weight: 700;
+  margin-bottom: 2.5rem;
+}
+.modalContents .modalScrollBox {
+  max-height: calc(90vh - 19rem);
+  overflow-y: auto;
+}
+.modalContents .modalScrollBox.exceptBtn {
+  max-height: calc(90vh - 27rem);
 }

@@ -7,6 +7,9 @@ import ChattingDrawerProfile from "./ChattingDrawerProfile";
 import ChattingDrawerPost from "./ChattingDrawerPost";
 import ScheduleBox from "../ScheduleBox/ScheduleBox";
 import MedicalEstimateSheet from "./MedicalEstimateSheet";
+import MedicalEstimateSheetAdd from "./MedicalEstimateSheetAdd";
+import EstimateVisaAgency from "./EstimateVisaAgency";
+import ChattingDrawerSharing from "./ChattingDrawerSharing";
 
 const ChattingDrawer = () => {
     // 퍼블 화면 전환(확인)을 위한 페이지 이동 이벤트 입니다. 개발시 삭제 해 주세요.
@@ -46,6 +49,15 @@ const ChattingDrawer = () => {
                 )}
                 {viewMode === 4 && (
                     <MedicalEstimateSheet viewHandler={viewHandler} />
+                )}
+                {viewMode === 5 && (
+                    <MedicalEstimateSheetAdd viewHandler={viewHandler} />
+                )}
+                {viewMode === 6 && (
+                    <EstimateVisaAgency viewHandler={viewHandler} />
+                )}
+                {viewMode === 7 && (
+                    <ChattingDrawerSharing viewHandler={viewHandler} />
                 )}
             </div>
             {isScheduleBox && <ScheduleBox />}

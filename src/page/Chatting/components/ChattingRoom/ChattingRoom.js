@@ -5,7 +5,6 @@ import profile01 from "../../../../images/profile_img_1.png";
 import flag01 from "../../../../images/flag_1.svg";
 import ChattingSend from "./ChattingSend/ChattingSend";
 import Modal from "../../../../common/Modal/Modal";
-import FormWrap from "../../../../common/FormWrap/FormWrap";
 import HealthChart from "./HealthChart";
 
 const ChattingRoom = () => {

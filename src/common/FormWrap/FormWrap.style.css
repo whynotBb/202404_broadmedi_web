@@ -1,5 +1,5 @@
 .formWrap {
-  padding: 2.6rem 6.2rem 0;
+  padding: 0 6.2rem;
 }
 .formWrap em {
   color: #ff3860;
@@ -15,6 +15,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 2.2rem;
 }
 .formWrap .formTitle i {
   color: #272727;
@@ -35,6 +38,57 @@
   font-weight: 400;
   color: rgba(0, 0, 0, 0.87);
   width: 15.2rem;
+}
+.formWrap .formItem.amountItem {
+  line-height: 2.2rem;
+  padding: 1rem 0 0;
+}
+.formWrap .formItem.amountItem h5 {
+  flex: 1;
+  color: rgba(0, 0, 0, 0.87);
+}
+.formWrap .formItem.amountItem p {
+  flex: 1;
+  font-weight: 500;
+  text-align: right;
+  color: #1bbdc8;
+}
+.formWrap .formItem.amountItem p small {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.formWrap .formItem.amountItem h4 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.87);
+}
+.formWrap .formItem.amountItem h3 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.2rem;
+  color: rgba(0, 0, 0, 0.87);
+}
+.formWrap hr.dashed {
+  border: none;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.54);
+  margin: 1.5rem 0 1rem;
+}
+.formWrap .shadowBox {
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  padding: 1.5rem 1.6rem;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.3rem;
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.formWrap .shadowBox span {
+  display: block;
+  color: rgba(0, 0, 0, 0.54);
 }
 .formWrap input[type=text],
 .formWrap input[type=number] {
@@ -129,4 +183,39 @@
 }
 .formWrap .infoItem span.noData {
   color: rgba(0, 0, 0, 0.38);
+}
+.formWrap .amountBox .subTitle {
+  padding: 1rem 0;
+  height: 6.8rem;
+  line-height: 4.8rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.87);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+.formWrap .amountBox .amountInput {
+  text-align: right;
+}
+.formWrap .addMorePeople {
+  cursor: pointer;
+  width: 100%;
+  border-radius: 0.8rem;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  padding: 1.2rem;
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+.formWrap .addMorePeople::before {
+  content: "";
+  display: block;
+  width: 1.6rem;
+  height: 1.6rem;
+  background: url(../../images/icon_more_plus.svg) no-repeat center;
 }

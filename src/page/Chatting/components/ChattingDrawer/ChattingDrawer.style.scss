@@ -14,7 +14,8 @@
             font-size: 0;
             color: transparent;
             text-indent: -999999px;
-            background: url(../../../../images/icon_arrow_left.svg) no-repeat center;
+            background: url(../../../../images/icon_arrow_left.svg) no-repeat
+                center;
         }
     }
     .drawerProfile {
@@ -52,7 +53,7 @@
                 position: relative;
                 &.btn_profile {
                     &::before {
-                        content: '';
+                        content: "";
                         display: block;
                         position: absolute;
                         width: 4rem;
@@ -64,7 +65,7 @@
                         transform: translateX(-50%);
                     }
                     &::after {
-                        content: '';
+                        content: "";
                         display: block;
                         position: absolute;
                         width: 4rem;
@@ -72,11 +73,13 @@
                         top: 0;
                         left: 50%;
                         transform: translateX(-50%);
-                        background: url(../../../../images/profile_user.svg) no-repeat center;
+                        background: url(../../../../images/profile_user.svg)
+                            no-repeat center;
                     }
                 }
                 &.btn_alarm {
-                    background: url(../../../../images/icon_alarm.svg) no-repeat center top;
+                    background: url(../../../../images/icon_alarm.svg) no-repeat
+                        center top;
                 }
             }
         }
@@ -110,7 +113,8 @@
             padding: 1.1rem 0;
             font-weight: 500;
             line-height: 2.2rem;
-            background: url(../../../../images/icon_arrow_right.svg) no-repeat right center;
+            background: url(../../../../images/icon_arrow_right.svg) no-repeat
+                right center;
         }
     }
     .drawerBottom {
@@ -133,7 +137,8 @@
     .btnHiddenMenu {
         width: 3.6rem;
         height: 3.6rem;
-        background: url(../../../../images/icon_more_vertical.svg) no-repeat center;
+        background: url(../../../../images/icon_more_vertical.svg) no-repeat
+            center;
         position: absolute;
         top: 6.7rem;
         right: 3rem;
@@ -315,6 +320,10 @@
     position: relative;
     p {
         cursor: pointer;
+        padding-right: 5.2rem;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
     }
     .dateTime {
         font-size: 1.1rem;
@@ -323,6 +332,7 @@
     }
     &.noFile {
         p {
+            cursor: default;
             color: rgba(0, 0, 0, 0.54);
         }
     }
@@ -332,11 +342,76 @@
     .hiddenMenu {
         top: 3rem;
     }
+    .confirm {
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: #1bbdc8;
+        position: absolute;
+        right: 3rem;
+        top: 50%;
+        transform: translateY(-50%);
+    }
 }
 .drawerBtnWrap {
     padding: 4.5rem 3rem 0;
     display: flex;
     button {
         flex: 1;
+    }
+}
+.viewDocumentWrap {
+    padding: 3.2rem 4.5rem;
+    background: rgba(0, 0, 0, 0.06);
+    .viewDocumentHeader {
+        padding: 1.2rem 3.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .viewItem {
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+            li {
+                width: 3rem;
+                height: 3rem;
+                font-size: 0;
+                color: transparent;
+                text-indent: -999999px;
+                background-repeat: no-repeat;
+                background-position: center;
+                cursor: pointer;
+                &.download {
+                    background-image: url(../../../../images/icon_download.svg);
+                }
+                &.plus {
+                    background-image: url(../../../../images/icon_plus_20.svg);
+                }
+                &.minus {
+                    background-image: url(../../../../images/icon_minus_20.svg);
+                }
+            }
+        }
+    }
+    .docSlider {
+        .doc {
+            text-align: center;
+        }
+    }
+    .react-multiple-carousel__arrow {
+        background: url(../../../../images/Ico_swipe_page.svg) no-repeat center;
+        &::before {
+            display: none;
+        }
+        &:hover {
+            background: url(../../../../images/Ico_swipe_page.svg) no-repeat
+                center;
+        }
+        &.react-multiple-carousel__arrow--left {
+            left: 0;
+        }
+        &.react-multiple-carousel__arrow--right {
+            right: 0;
+            transform: rotate(180deg);
+        }
     }
 }
