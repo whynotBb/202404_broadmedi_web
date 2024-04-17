@@ -1,0 +1,103 @@
+.datePickerWrap {
+  flex: 1;
+}
+.datePickerWrap .react-datepicker-wrapper {
+  width: 100%;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.datePickerWrap .react-datepicker-wrapper .react-datepicker-ignore-onclickoutside {
+  width: 100%;
+}
+.datePickerWrap .react-datepicker-wrapper input {
+  width: 100%;
+}
+.datePickerWrap .react-datepicker {
+  font-family: "Noto Sans KR", sans-serif;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  width: 25rem;
+}
+.datePickerWrap .react-datepicker__month-container {
+  width: 100%;
+}
+.datePickerWrap .react-datepicker__month-container .react-datepicker__header {
+  padding: 0;
+  background: none;
+  border-bottom: none;
+}
+.datePickerWrap .react-datepicker__month-container .react-datepicker__header .react-datepicker__current-month {
+  line-height: 2.2rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0 1rem;
+  height: 2.2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+.datePickerWrap .react-datepicker__day-names {
+  display: flex;
+}
+.datePickerWrap .react-datepicker__day-name {
+  line-height: 1.4rem;
+  margin: 0;
+  flex: 1;
+}
+.datePickerWrap .react-datepicker__day {
+  flex: 1;
+}
+.datePickerWrap .react-datepicker__day-name,
+.datePickerWrap .react-datepicker__day,
+.datePickerWrap .react-datepicker__time-name {
+  color: rgba(0, 0, 0, 0.87);
+}
+.datePickerWrap .react-datepicker__month {
+  margin: 9px 0;
+}
+.datePickerWrap .react-datepicker__navigation {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+.datePickerWrap .react-datepicker__navigation span {
+  display: none;
+}
+.datePickerWrap .react-datepicker__navigation.react-datepicker__navigation--previous {
+  background: url(../../images/calendar_left.svg) no-repeat center;
+  background-size: 0.9rem;
+  left: 1rem;
+}
+.datePickerWrap .react-datepicker__navigation.react-datepicker__navigation--next {
+  background: url(../../images/calendar_right.svg) no-repeat center;
+  background-size: 0.9rem;
+  right: initial;
+  left: 2.8rem;
+}
+.datePickerWrap .react-datepicker__triangle {
+  display: none;
+}
+.datePickerWrap .react-datepicker__week {
+  height: 4.75rem;
+  display: flex;
+}
+.datePickerWrap .react-datepicker__day--keyboard-selected,
+.datePickerWrap .react-datepicker__month-text--keyboard-selected,
+.datePickerWrap .react-datepicker__quarter-text--keyboard-selected,
+.datePickerWrap .react-datepicker__year-text--keyboard-selected,
+.datePickerWrap .react-datepicker__day--selected,
+.datePickerWrap .react-datepicker__day--in-selecting-range,
+.datePickerWrap .react-datepicker__day--in-range,
+.datePickerWrap .react-datepicker__month-text--selected,
+.datePickerWrap .react-datepicker__month-text--in-selecting-range,
+.datePickerWrap .react-datepicker__month-text--in-range,
+.datePickerWrap .react-datepicker__quarter-text--selected,
+.datePickerWrap .react-datepicker__quarter-text--in-selecting-range,
+.datePickerWrap .react-datepicker__quarter-text--in-range,
+.datePickerWrap .react-datepicker__year-text--selected,
+.datePickerWrap .react-datepicker__year-text--in-selecting-range,
+.datePickerWrap .react-datepicker__year-text--in-range {
+  background: none;
+}
+.datePickerWrap .react-datepicker__day--today,
+.datePickerWrap .react-datepicker__day--selected {
+  color: #1bbdc8;
+}
+.datePickerWrap .react-datepicker__day--outside-month {
+  color: rgba(0, 0, 0, 0.54);
+}

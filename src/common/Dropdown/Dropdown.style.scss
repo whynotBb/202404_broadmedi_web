@@ -1,5 +1,5 @@
 .dropdownBox {
-    width: 34.5rem;
+    width: 35.8rem;
     position: relative;
 
     p {
@@ -12,7 +12,7 @@
         width: 100%;
         cursor: pointer;
         &::before {
-            content: "";
+            content: '';
             width: 1.5rem;
             height: 1.5rem;
             background: url(../../images/icon_dropdown.svg);
@@ -29,7 +29,7 @@
         }
     }
     ul {
-        width: 34.5rem;
+        width: 35.8rem;
         display: none;
         position: absolute;
         top: 4.3rem;

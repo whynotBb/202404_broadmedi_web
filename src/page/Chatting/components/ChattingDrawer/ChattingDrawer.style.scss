@@ -14,8 +14,7 @@
             font-size: 0;
             color: transparent;
             text-indent: -999999px;
-            background: url(../../../../images/icon_arrow_left.svg) no-repeat
-                center;
+            background: url(../../../../images/icon_arrow_left.svg) no-repeat center;
         }
     }
     .drawerProfile {
@@ -53,7 +52,7 @@
                 position: relative;
                 &.btn_profile {
                     &::before {
-                        content: "";
+                        content: '';
                         display: block;
                         position: absolute;
                         width: 4rem;
@@ -65,7 +64,7 @@
                         transform: translateX(-50%);
                     }
                     &::after {
-                        content: "";
+                        content: '';
                         display: block;
                         position: absolute;
                         width: 4rem;
@@ -73,13 +72,11 @@
                         top: 0;
                         left: 50%;
                         transform: translateX(-50%);
-                        background: url(../../../../images/profile_user.svg)
-                            no-repeat center;
+                        background: url(../../../../images/profile_user.svg) no-repeat center;
                     }
                 }
                 &.btn_alarm {
-                    background: url(../../../../images/icon_alarm.svg) no-repeat
-                        center top;
+                    background: url(../../../../images/icon_alarm.svg) no-repeat center top;
                 }
             }
         }
@@ -113,8 +110,7 @@
             padding: 1.1rem 0;
             font-weight: 500;
             line-height: 2.2rem;
-            background: url(../../../../images/icon_arrow_right.svg) no-repeat
-                right center;
+            background: url(../../../../images/icon_arrow_right.svg) no-repeat right center;
         }
     }
     .drawerBottom {
@@ -137,8 +133,7 @@
     .btnHiddenMenu {
         width: 3.6rem;
         height: 3.6rem;
-        background: url(../../../../images/icon_more_vertical.svg) no-repeat
-            center;
+        background: url(../../../../images/icon_more_vertical.svg) no-repeat center;
         position: absolute;
         top: 6.7rem;
         right: 3rem;
@@ -403,8 +398,7 @@
             display: none;
         }
         &:hover {
-            background: url(../../../../images/Ico_swipe_page.svg) no-repeat
-                center;
+            background: url(../../../../images/Ico_swipe_page.svg) no-repeat center;
         }
         &.react-multiple-carousel__arrow--left {
             left: 0;
@@ -414,4 +408,9 @@
             transform: rotate(180deg);
         }
     }
+}
+.sharingDrawerWrap {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }

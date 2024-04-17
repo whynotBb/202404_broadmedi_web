@@ -1,7 +1,22 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Profile from '../../../../common/Profile/Profile';
+import Modal from '../../../../common/Modal/Modal';
+import Button from '../../../../common/Button/Button';
+import {PerFormanceReportForm} from './PerFormanceReportForm';
+import Alert from '../../../../common/Alert/Alert';
 
 const ChattingDrawerDefault = ({profileImg, nationImg, viewHandler, scheduleBoxHandler}) => {
+    // 모달 여닫기
+    //openModal : 파일 업로드
+    const [openModal, setOpenModal] = useState(false);
+    const openModalHandler = () => {
+        setOpenModal((current) => !current);
+    };
+    //alert open
+    const [openAlert, setOpenAlert] = useState(false);
+    const openAlertHandler = () => {
+        setOpenAlert((current) => !current);
+    };
     return (
         <>
             <h3 className='title'>의료 관광</h3>
@@ -44,13 +59,30 @@ const ChattingDrawerDefault = ({profileImg, nationImg, viewHandler, scheduleBoxH
                     <li onClick={() => viewHandler(5)}>의료관광 추가 견적서</li>
                     <li onClick={() => viewHandler(6)}>비자발급 대행 견적서</li>
                     <li onClick={() => viewHandler(7)}>공유 서류함</li>
-                    <li onClick={() => viewHandler(8)}>유치실적 보고서</li>
+                    <li onClick={openModalHandler}>유치실적 보고서</li>
                 </ul>
             </div>
             <div className='drawerBottom'>
                 {/* 로그아웃? = 알맞는 의미로 넣어주세요 */}
                 <div className='out'>로그아웃</div>
             </div>
+            <Modal className={openModal ? 'open' : ''} openModalHandler={openModalHandler}>
+                {/* <h3 className='modalTitle'>유치실적 보고서</h3> */}
+                <div className='modalScrollBox'>
+                    <PerFormanceReportForm />
+                    <div className='modalBottom'>
+                        <Button type='secondary' size='lg' fn={openModalHandler}>
+                            취소
+                        </Button>
+                        <Button type='primary' size='lg'>
+                            저장 및 공유
+                        </Button>
+                    </div>
+                </div>
+            </Modal>
+            <Alert className={openAlert ? 'open' : ''} openAlertHandler={openAlertHandler}>
+                유치실적 보고서 작성이 완료되었습니다. 마이페이지에서 내용을 확인해 주세요.
+            </Alert>
         </>
     );
 };

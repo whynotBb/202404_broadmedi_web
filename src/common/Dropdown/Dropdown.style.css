@@ -1,5 +1,5 @@
 .dropdownBox {
-  width: 34.5rem;
+  width: 35.8rem;
   position: relative;
 }
 .dropdownBox p {
@@ -27,7 +27,7 @@
   transform: translateY(-50%) rotate(180deg);
 }
 .dropdownBox ul {
-  width: 34.5rem;
+  width: 35.8rem;
   display: none;
   position: absolute;
   top: 4.3rem;
