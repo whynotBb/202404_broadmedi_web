@@ -38,12 +38,33 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-color: transparent;
+  position: relative;
+}
+.subWrapper nav ul li span {
+  display: none;
+  text-indent: initial;
+  width: 5.8rem;
+  height: 2.9rem;
+  line-height: 2.9rem;
+  padding: 0 1.6rem;
+  background: #27bfb0;
+  border-radius: 0.8rem;
+  position: absolute;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 700;
+  box-sizing: border-box;
+  right: -6.5rem;
+  z-index: 10;
 }
 .subWrapper nav ul li.home {
   background-image: url(../../../../images/snb_home.svg);
 }
 .subWrapper nav ul li.chatting {
   background-image: url(../../../../images/snb_chat.svg);
+}
+.subWrapper nav ul li.chatting:hover span {
+  display: block;
 }
 .subWrapper nav ul li.hospital {
   background-image: url(../../../../images/snb_hospital.svg);

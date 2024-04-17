@@ -32,8 +32,11 @@
                 &.video {
                     background-image: url(../../../../images/icon_video.svg);
                 }
-                &.more {
-                    background-image: url(../../../../images/icon_more.svg);
+                &.translate {
+                    background-image: url(../../../../images/translate_off.svg);
+                    &.on {
+                        background-image: url(../../../../images/translate_on.svg);
+                    }
                 }
             }
         }
@@ -120,7 +123,8 @@
             border-radius: 0 0 1.6rem 1.6rem;
             font-weight: 500;
             line-height: 4rem;
-            background: url(../../../../images/icon_memo.svg) no-repeat left 2.1rem center;
+            background: url(../../../../images/icon_memo.svg) no-repeat left
+                2.1rem center;
             border-top: 1px solid rgba(0, 0, 0, 0.12);
         }
     }

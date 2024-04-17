@@ -10,7 +10,9 @@ const Snb = () => {
                 <ul>
                     <li className="home">home</li>
                     {/* on 에서 활성화 */}
-                    <li className="chatting on">chatting</li>
+                    <li className="chatting on">
+                        <span>채팅</span>
+                    </li>
                     <li className="hospital">hospital</li>
                     <li className="chart">chart</li>
                     <li className="mypage">mypage</li>

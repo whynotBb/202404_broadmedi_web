@@ -6,6 +6,9 @@ import flag01 from "../../../../images/flag_1.svg";
 import ChattingSend from "./ChattingSend/ChattingSend";
 import Modal from "../../../../common/Modal/Modal";
 import HealthChart from "./HealthChart";
+import Alert from "../../../../common/Alert/Alert";
+import Dropdown from "../../../../common/Dropdown/Dropdown";
+import Toggle from "../../../../common/Toggle/Toggle";
 
 const ChattingRoom = () => {
     // 건강차트 모달 여닫기
@@ -13,6 +16,18 @@ const ChattingRoom = () => {
     const openModalHandler = () => {
         setOpenModal((current) => !current);
     };
+    //alert open
+    const [openAlert, setOpenAlert] = useState(false);
+    const closeAlertHandler = () => {
+        setOpenAlert(false);
+    };
+    //translate state
+    const [isTranslate, setIsTranslate] = useState(false);
+    const translateHandler = () => {
+        setIsTranslate((current) => !current);
+        setOpenAlert(true);
+    };
+    const optionData = ["한국어", "영어", "베트남어", "태국어"];
     return (
         <div className="chattingRoomWrap">
             <div className="chattingRoomHeader">
@@ -21,9 +36,28 @@ const ChattingRoom = () => {
                 <ul className="shortcut">
                     <li className="call">call</li>
                     <li className="video">video</li>
-                    <li className="more">more</li>
+                    <li
+                        className={`translate ${isTranslate ? "on" : ""}`}
+                        onClick={translateHandler}
+                    >
+                        translate
+                    </li>
                 </ul>
             </div>
+            <Alert
+                size="sm"
+                className={openAlert ? "open" : ""}
+                openAlertHandler={closeAlertHandler}
+            >
+                <div className="formBox">
+                    <p>수신 메시지 번역하기</p>
+                    <Dropdown placeholder="한국어" optionData={optionData} />
+                </div>
+                <div className="toggleBox">
+                    <p>자동번역</p>
+                    <Toggle id="toggle" />
+                </div>
+            </Alert>
             <div className="chattingRoomBody">
                 <div className="dateTime">2023년 05월 09일</div>
                 <div className="msgBox yourMsg">
