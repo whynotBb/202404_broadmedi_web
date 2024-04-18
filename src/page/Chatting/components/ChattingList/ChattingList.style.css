@@ -43,7 +43,7 @@
   background: #27bfb0;
   width: 2.4rem;
   height: 2.4rem;
-  line-height: 2.2rem;
+  line-height: 2.4rem;
   text-align: center;
   border-radius: 1.2rem;
   position: absolute;
@@ -55,4 +55,27 @@
   position: absolute;
   top: 1.2rem;
   right: 1.2rem;
+}
+@media (max-width: 1024px) {
+  .chattingListWrap {
+    width: 8rem;
+    overflow-x: hidden;
+  }
+  .chattingListWrap .title,
+  .chattingListWrap .searchBoxWrap {
+    display: none;
+  }
+  .chattingListWrap .chattingListBox {
+    height: 100vh;
+    overflow-x: hidden;
+  }
+  .chattingListWrap .item {
+    height: 7.2rem;
+  }
+  .chattingListWrap .item h4,
+  .chattingListWrap .item p,
+  .chattingListWrap .item .messageNum,
+  .chattingListWrap .item .time {
+    display: none;
+  }
 }

@@ -27,6 +27,11 @@
   border-radius: 1.6rem;
   padding-bottom: 5.1rem;
 }
+@media (max-width: 640px) {
+  .modalContents {
+    width: 100vw;
+  }
+}
 .modalContents .modalHeader {
   width: 100%;
   height: 6.4rem;
@@ -60,4 +65,14 @@
 }
 .modalContents .modalScrollBox.exceptBtn {
   max-height: calc(90vh - 27rem);
+}
+.modalContents.md {
+  width: 43.3rem;
+}
+.modalContents.md .formWrap {
+  padding: 0 2rem;
+}
+.modalContents .btnRight {
+  margin-top: 2rem;
+  padding: 1rem 2rem;
 }

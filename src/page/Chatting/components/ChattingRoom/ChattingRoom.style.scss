@@ -1,5 +1,12 @@
 .chattingRoomWrap {
   width: 103.8rem;
+  @media (max-width: 1200px) {
+    min-width: 55.8rem;
+  }
+  @media (max-width: 1024px) {
+    width: calc(100vw - 18rem);
+    min-width: initial;
+  }
   .chattingRoomHeader {
     height: 7.6rem;
     padding: 1rem 1.6rem;
@@ -126,7 +133,8 @@
       border-radius: 0 0 1.6rem 1.6rem;
       font-weight: 500;
       line-height: 4rem;
-      background: url(../../../../images/icon_memo.svg) no-repeat left 2.1rem center;
+      background: url(../../../../images/icon_memo.svg) no-repeat left 2.1rem
+        center;
       border-top: 1px solid rgba(0, 0, 0, 0.12);
     }
   }

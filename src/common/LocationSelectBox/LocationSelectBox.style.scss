@@ -1,7 +1,19 @@
-.dropdownBox {
-  width: 35.8rem;
+.location {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  .pin {
+    font-size: 0;
+    color: transparent;
+    text-indent: -999999px;
+    width: 3.8rem;
+    height: 3.8rem;
+    background: url(../../images/icon_pin_primary.svg) no-repeat center;
+  }
+}
+.locationSelectBox {
+  width: 34rem;
   position: relative;
-
   p {
     border-radius: 8px;
     border: 1px solid rgba(0, 0, 0, 0.12);
@@ -11,25 +23,9 @@
     line-height: 4rem;
     width: 100%;
     cursor: pointer;
-    &::before {
-      content: "";
-      width: 1.5rem;
-      height: 1.5rem;
-      background: url(../../images/icon_dropdown.svg);
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      right: 1.2rem;
-      transition: all 0.3s;
-    }
-  }
-  &.on {
-    p:before {
-      transform: translateY(-50%) rotate(180deg);
-    }
   }
   ul {
-    width: 35.8rem;
+    width: 34rem;
     display: none;
     position: absolute;
     top: 4.3rem;
@@ -46,13 +42,22 @@
       font-size: 1.6rem;
       font-weight: 400;
       color: rgba(0, 0, 0, 0.87);
-      height: 4.6rem;
-      line-height: 4.6rem;
-      padding: 0 1.6rem;
+      line-height: 2.2rem;
+      padding: 0.5rem 2rem 0.5rem 6.6rem;
       background: #fff;
       cursor: pointer;
+      background-repeat: no-repeat;
+      background-position: left 2rem center;
+      background-image: url(../../images/icon_pin_gray.svg);
+      h5 {
+        font-size: 1.6rem !important;
+        font-weight: 400;
+      }
+      span {
+        color: rgba(0, 0, 0, 0.54);
+      }
       &:hover {
-        background: rgba(50, 115, 220, 0.12);
+        background-color: rgba(50, 115, 220, 0.12);
       }
     }
     &.on {

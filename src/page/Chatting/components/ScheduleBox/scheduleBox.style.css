@@ -5,6 +5,23 @@
   background: #fff;
   width: calc(100% - 56.2rem);
   height: 100%;
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 1440px) {
+  .scheduleBoxWrap {
+    width: calc(100% - 38rem);
+  }
+}
+@media (max-width: 1280px) {
+  .scheduleBoxWrap {
+    width: calc(100% - 33rem);
+  }
+}
+@media (max-width: 1200px) {
+  .scheduleBoxWrap {
+    width: calc(100% - 8rem);
+  }
 }
 .scheduleBoxWrap .title {
   font-size: 2.8rem;
@@ -59,6 +76,9 @@
   line-height: 2.2rem;
   color: rgba(0, 0, 0, 0.87);
 }
+.scheduleBoxWrap .calendarWrap .fc .fc-theme-standard .fc-scrollgrid {
+  border: none !important;
+}
 .scheduleBoxWrap .calendarWrap .fc table {
   font-size: 1.6rem;
   font-weight: 500;
@@ -79,7 +99,29 @@
 .scheduleBoxWrap .calendarWrap .fc table .fc-daygrid-day-top {
   justify-content: center;
 }
-.scheduleBoxWrap .calendarWrap .fc table .fc-theme-standard td,
-.scheduleBoxWrap .calendarWrap .fc table .fc-theme-standard th {
-  border-color: rgba(0, 0, 0, 0.12) !important;
+.scheduleBoxWrap .calendarWrap .fc .fc-day-today {
+  background-color: transparent;
+}
+.scheduleBoxWrap .calendarWrap .fc .fc-day-today .fc-daygrid-day-number {
+  color: #1bbdc8;
+  font-weight: 700;
+}
+.scheduleBoxWrap .fc-theme-standard td,
+.scheduleBoxWrap .fc-theme-standard th {
+  border: none;
+}
+.scheduleBoxWrap .fc-theme-standard th {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12) !important;
+}
+.scheduleBoxWrap .fc-theme-standard .fc-scrollgrid {
+  border-left: none;
+}
+.scheduleBoxWrap .eventBar {
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 400;
+}
+.scheduleBoxWrap .fc-h-event .fc-event-main {
+  background-color: #3273dc;
+  font-weight: 400;
+  text-align: center;
 }

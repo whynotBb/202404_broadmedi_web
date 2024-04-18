@@ -1,19 +1,20 @@
 import React from "react";
 import "./Modal.style.css";
 
-const Modal = ({ className, openModalHandler, children }) => {
-    return (
-        <div className={`modalWrap ${className}`}>
-            <div className="modalContents">
-                <div className="modalHeader">
-                    <button className="btnClose" onClick={openModalHandler}>
-                        close
-                    </button>
-                </div>
-                <div className="modalBody">{children}</div>
-            </div>
+// size = 기본 / md :433px 달력의 모달
+const Modal = ({ className, openModalHandler, children, size }) => {
+  return (
+    <div className={`modalWrap ${className} `}>
+      <div className={`modalContents ${size ? size : ""}`}>
+        <div className="modalHeader">
+          <button className="btnClose" onClick={openModalHandler}>
+            close
+          </button>
         </div>
-    );
+        <div className="modalBody">{children}</div>
+      </div>
+    </div>
+  );
 };
 
 export default Modal;

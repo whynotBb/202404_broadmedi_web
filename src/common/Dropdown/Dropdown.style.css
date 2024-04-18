@@ -38,6 +38,8 @@
   border: 1px solid rgba(0, 0, 0, 0.12);
   box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.12);
   z-index: 10;
+  max-height: 23rem;
+  overflow-y: auto;
 }
 .dropdownBox ul li {
   font-size: 1.6rem;
@@ -54,6 +56,20 @@
 }
 .dropdownBox ul.on {
   display: block;
+}
+.dropdownBox.md {
+  width: 19rem;
+}
+.dropdownBox.md p {
+  height: 4rem;
+  line-height: 3.8rem;
+}
+.dropdownBox.md ul {
+  width: 19rem;
+}
+.dropdownBox.md ul li {
+  height: 4rem;
+  line-height: 4rem;
 }
 .dropdownBox.sm {
   width: 9.8rem;

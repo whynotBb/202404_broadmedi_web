@@ -70,6 +70,25 @@
   line-height: 2.2rem;
   color: rgba(0, 0, 0, 0.87);
 }
+.formWrap .formItem.col {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+.formWrap .formItem.col h5,
+.formWrap .formItem.col input {
+  width: 100%;
+}
+.formWrap .formItem.col input[type=text] {
+  height: 4rem;
+  line-height: 4rem;
+}
+.formWrap .formItem.row {
+  gap: 1rem;
+}
+.formWrap .formItem.row .formItem.col {
+  flex: 1;
+}
 .formWrap hr.dashed {
   border: none;
   border-bottom: 1px dashed rgba(0, 0, 0, 0.54);
@@ -114,6 +133,14 @@
 .formWrap input[type=text]::placeholder,
 .formWrap input[type=number]::placeholder {
   color: rgba(0, 0, 0, 0.54);
+}
+.formWrap input[type=text].titleInput,
+.formWrap input[type=number].titleInput {
+  border: none;
+  border-bottom: 1px solid #000;
+  height: 5rem;
+  line-height: 4.9rem;
+  border-radius: 0;
 }
 .formWrap .textBoxItem {
   padding-top: 2.8rem;

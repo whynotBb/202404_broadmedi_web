@@ -1,232 +1,258 @@
 .formWrap {
-    padding: 0 6.2rem;
-    em {
+  padding: 0 6.2rem;
+  em {
+    color: #ff3860;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.2rem;
+    padding-left: 0.5rem;
+    display: inline-block;
+  }
+  .formTitle {
+    height: 4.4rem;
+    border-bottom: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2.2rem;
+    i {
+      color: #272727;
+      font-size: 1.6rem;
+      font-weight: 500;
+      line-height: 2.2rem;
+      em {
         color: #ff3860;
-        font-size: 1.6rem;
-        font-weight: 400;
-        line-height: 2.2rem;
-        padding-left: 0.5rem;
-        display: inline-block;
+      }
     }
-    .formTitle {
-        height: 4.4rem;
-        border-bottom: 1px solid #000;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        font-size: 2rem;
-        font-weight: 500;
-        line-height: 2.2rem;
-        i {
-            color: #272727;
-            font-size: 1.6rem;
-            font-weight: 500;
-            line-height: 2.2rem;
-            em {
-                color: #ff3860;
-            }
-        }
+  }
+  .formItem {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+    flex-wrap: wrap;
+    gap: 1.2rem 0;
+    h5 {
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: rgba(0, 0, 0, 0.87);
+      width: 15.2rem;
     }
-    .formItem {
-        display: flex;
-        align-items: center;
-        padding: 1rem 0;
-        flex-wrap: wrap;
-        gap: 1.2rem 0;
-        h5 {
-            font-size: 1.4rem;
-            font-weight: 400;
-            color: rgba(0, 0, 0, 0.87);
-            width: 15.2rem;
-        }
-        &.amountItem {
-            line-height: 2.2rem;
-            padding: 1rem 0 0;
+    &.amountItem {
+      line-height: 2.2rem;
+      padding: 1rem 0 0;
 
-            h5 {
-                flex: 1;
-                color: rgba(0, 0, 0, 0.87);
-            }
-            p {
-                flex: 1;
-                font-weight: 500;
-                text-align: right;
-                color: #1bbdc8;
-                small {
-                    font-size: 1.4rem;
-                    font-weight: 400;
-                }
-            }
-            h4 {
-                font-size: 1.4rem;
-                font-weight: 700;
-                color: rgba(0, 0, 0, 0.87);
-            }
-            h3 {
-                font-size: 1.6rem;
-                font-weight: 500;
-                line-height: 2.2rem;
-                color: rgba(0, 0, 0, 0.87);
-            }
-        }
-    }
-    hr.dashed {
-        border: none;
-        border-bottom: 1px dashed rgba(0, 0, 0, 0.54);
-        margin: 1.5rem 0 1rem;
-    }
-    .shadowBox {
-        border-radius: 10px;
-        box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.12);
-        padding: 1.5rem 1.6rem;
-        color: rgba(0, 0, 0, 0.87);
-        font-size: 1.1rem;
-        font-weight: 400;
-        line-height: 1.3rem;
-        margin: 2rem 0;
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
-        span {
-            display: block;
-            color: rgba(0, 0, 0, 0.54);
-        }
-    }
-    input[type='text'],
-    input[type='number'] {
-        border-radius: 8px;
-        border: 1px solid rgba(0, 0, 0, 0.12);
-        padding: 0 1.2rem;
-        height: 4.6rem;
-        line-height: 4.6rem;
+      h5 {
         flex: 1;
-        &:read-only {
-            background: rgba(0, 0, 0, 0.06);
+        color: rgba(0, 0, 0, 0.87);
+      }
+      p {
+        flex: 1;
+        font-weight: 500;
+        text-align: right;
+        color: #1bbdc8;
+        small {
+          font-size: 1.4rem;
+          font-weight: 400;
         }
-        &::placeholder {
-            color: rgba(0, 0, 0, 0.54);
-        }
-    }
-
-    .textBoxItem {
-        padding-top: 2.8rem;
-        p {
-            line-height: 2.1rem;
-            font-size: 1.4rem;
-            color: rgba(0, 0, 0, 0.87);
-            margin-bottom: 0.8rem;
-        }
-        .textBox {
-            border-radius: 8px;
-            border: 1px solid rgba(0, 0, 0, 0.12);
-            padding: 0.8rem;
-            .inner {
-                line-height: 2.2rem;
-                color: rgba(0, 0, 0, 0.54);
-                width: 100%;
-                white-space: normal;
-                display: -webkit-box;
-                -webkit-line-clamp: 3;
-                -webkit-box-orient: vertical;
-                overflow: hidden;
-                transition: all 0.3s;
-            }
-            .more {
-                cursor: pointer;
-                font-size: 1.6rem;
-                font-weight: 500;
-                line-height: 2.2rem;
-                color: #1bbdc8;
-                display: block;
-            }
-            &.open {
-                .inner {
-                    white-space: initial;
-                    display: initial;
-                    -webkit-line-clamp: initial;
-                    -webkit-box-orient: initial;
-                    overflow: initial;
-                }
-            }
-        }
-    }
-    h6 {
+      }
+      h4 {
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: rgba(0, 0, 0, 0.87);
+      }
+      h3 {
         font-size: 1.6rem;
         font-weight: 500;
         line-height: 2.2rem;
-        padding: 2.8rem 0 1.4rem;
+        color: rgba(0, 0, 0, 0.87);
+      }
     }
-    .infoItem {
-        padding-top: 1rem;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        font-size: 1.6rem;
-        font-weight: 400;
-        line-height: 2.2rem;
-        h5 {
-            font-size: 1.6rem;
-            font-weight: 400;
-            line-height: 2.2rem;
-        }
-        span {
-            height: 3.4rem;
-            line-height: 3.2rem;
-            border: 1px solid #27bfb0;
-            border-radius: 5px;
-            padding: 0 0.5rem;
-            color: rgba(0, 0, 0, 0.87);
+    &.col {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+      h5,
+      input {
+        width: 100%;
+      }
+      input[type="text"] {
+        height: 4rem;
+        line-height: 4rem;
+      }
+    }
+    &.row {
+      gap: 1rem;
+      .formItem.col {
+        flex: 1;
+      }
+    }
+  }
+  hr.dashed {
+    border: none;
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.54);
+    margin: 1.5rem 0 1rem;
+  }
+  .shadowBox {
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.12);
+    padding: 1.5rem 1.6rem;
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.3rem;
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    span {
+      display: block;
+      color: rgba(0, 0, 0, 0.54);
+    }
+  }
+  input[type="text"],
+  input[type="number"] {
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    padding: 0 1.2rem;
+    height: 4.6rem;
+    line-height: 4.6rem;
+    flex: 1;
+    &:read-only {
+      background: rgba(0, 0, 0, 0.06);
+    }
+    &::placeholder {
+      color: rgba(0, 0, 0, 0.54);
+    }
+    &.titleInput {
+      border: none;
+      border-bottom: 1px solid #000;
+      height: 5rem;
+      line-height: 4.9rem;
+      border-radius: 0;
+    }
+  }
 
-            &.noData {
-                color: rgba(0, 0, 0, 0.38);
-            }
-        }
+  .textBoxItem {
+    padding-top: 2.8rem;
+    p {
+      line-height: 2.1rem;
+      font-size: 1.4rem;
+      color: rgba(0, 0, 0, 0.87);
+      margin-bottom: 0.8rem;
     }
-    .amountBox {
-        .subTitle {
-            padding: 1rem 0;
-            height: 6.8rem;
-            line-height: 4.8rem;
-            font-size: 1.6rem;
-            font-weight: 500;
-            color: rgba(0, 0, 0, 0.87);
-            border-bottom: 1px solid rgba(0, 0, 0, 0.12);
-        }
-        .amountInput {
-            text-align: right;
-        }
-    }
-    .addMorePeople {
-        cursor: pointer;
-        width: 100%;
-        border-radius: 0.8rem;
-        border: 1px solid rgba(0, 0, 0, 0.12);
-        padding: 1.2rem;
+    .textBox {
+      border-radius: 8px;
+      border: 1px solid rgba(0, 0, 0, 0.12);
+      padding: 0.8rem;
+      .inner {
+        line-height: 2.2rem;
         color: rgba(0, 0, 0, 0.54);
-        font-size: 1.6rem;
-        font-weight: 400;
-        line-height: 2.2rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 0.8rem;
-        margin-bottom: 1.5rem;
-        &::before {
-            content: '';
-            display: block;
-            width: 1.6rem;
-            height: 1.6rem;
-            background: url(../../images/icon_more_plus.svg) no-repeat center;
-        }
-    }
-    textarea {
-        border: 1px solid rgba(0, 0, 0, 0.12);
-        border-radius: 0.8rem;
-        padding: 1.2rem;
-        font-size: 1.6rem;
-        font-weight: 400;
-        line-height: 2.2rem;
         width: 100%;
-        height: 14.6rem;
+        white-space: normal;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        transition: all 0.3s;
+      }
+      .more {
+        cursor: pointer;
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 2.2rem;
+        color: #1bbdc8;
+        display: block;
+      }
+      &.open {
+        .inner {
+          white-space: initial;
+          display: initial;
+          -webkit-line-clamp: initial;
+          -webkit-box-orient: initial;
+          overflow: initial;
+        }
+      }
     }
+  }
+  h6 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.2rem;
+    padding: 2.8rem 0 1.4rem;
+  }
+  .infoItem {
+    padding-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.2rem;
+    h5 {
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 2.2rem;
+    }
+    span {
+      height: 3.4rem;
+      line-height: 3.2rem;
+      border: 1px solid #27bfb0;
+      border-radius: 5px;
+      padding: 0 0.5rem;
+      color: rgba(0, 0, 0, 0.87);
+
+      &.noData {
+        color: rgba(0, 0, 0, 0.38);
+      }
+    }
+  }
+  .amountBox {
+    .subTitle {
+      padding: 1rem 0;
+      height: 6.8rem;
+      line-height: 4.8rem;
+      font-size: 1.6rem;
+      font-weight: 500;
+      color: rgba(0, 0, 0, 0.87);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    }
+    .amountInput {
+      text-align: right;
+    }
+  }
+  .addMorePeople {
+    cursor: pointer;
+    width: 100%;
+    border-radius: 0.8rem;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    padding: 1.2rem;
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    margin-bottom: 1.5rem;
+    &::before {
+      content: "";
+      display: block;
+      width: 1.6rem;
+      height: 1.6rem;
+      background: url(../../images/icon_more_plus.svg) no-repeat center;
+    }
+  }
+  textarea {
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 0.8rem;
+    padding: 1.2rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.2rem;
+    width: 100%;
+    height: 14.6rem;
+  }
 }

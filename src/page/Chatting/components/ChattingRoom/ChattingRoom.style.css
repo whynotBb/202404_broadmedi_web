@@ -1,6 +1,17 @@
 .chattingRoomWrap {
   width: 103.8rem;
 }
+@media (max-width: 1200px) {
+  .chattingRoomWrap {
+    min-width: 55.8rem;
+  }
+}
+@media (max-width: 1024px) {
+  .chattingRoomWrap {
+    width: calc(100vw - 18rem);
+    min-width: initial;
+  }
+}
 .chattingRoomWrap .chattingRoomHeader {
   height: 7.6rem;
   padding: 1rem 1.6rem;

@@ -1,6 +1,9 @@
 .datePickerWrap {
   flex: 1;
 }
+.datePickerWrap.schedule .react-datepicker-wrapper input {
+  background: url(../../images/icon_calendar.svg) no-repeat right 8px center;
+}
 .datePickerWrap .react-datepicker-wrapper {
   width: 100%;
   font-family: "Noto Sans KR", sans-serif;
