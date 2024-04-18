@@ -42,6 +42,9 @@
 .chattingRoomWrap .chattingRoomHeader .shortcut li.translate.on {
   background-image: url(../../../../images/translate_on.svg);
 }
+.chattingRoomWrap .chattingRoomHeader .shortcut li.more {
+  background-image: url(../../../../images/icon_more.svg);
+}
 .chattingRoomWrap .chattingRoomBody {
   height: calc(100% - 15.2rem);
   width: 100%;

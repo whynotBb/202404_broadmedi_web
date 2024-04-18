@@ -1,152 +1,154 @@
 .chattingRoomWrap {
-    width: 103.8rem;
-    .chattingRoomHeader {
-        height: 7.6rem;
-        padding: 1rem 1.6rem;
-        border-bottom: 1px solid #efefef;
-        display: flex;
-        align-items: center;
-        gap: 1.5rem;
-        h3 {
-            font-size: 1.6rem;
-            font-weight: 500;
-            line-height: 2.2rem;
-        }
-        .shortcut {
-            display: flex;
-            align-items: center;
-            gap: 3.5rem;
-            margin-left: auto;
-            li {
-                text-indent: -999999px;
-                color: transparent;
-                font-size: 0;
-                width: 3.6rem;
-                height: 3.6rem;
-                background-repeat: no-repeat;
-                background-position: center;
-                cursor: pointer;
-                &.call {
-                    background-image: url(../../../../images/icon_call.svg);
-                }
-                &.video {
-                    background-image: url(../../../../images/icon_video.svg);
-                }
-                &.translate {
-                    background-image: url(../../../../images/translate_off.svg);
-                    &.on {
-                        background-image: url(../../../../images/translate_on.svg);
-                    }
-                }
-            }
-        }
+  width: 103.8rem;
+  .chattingRoomHeader {
+    height: 7.6rem;
+    padding: 1rem 1.6rem;
+    border-bottom: 1px solid #efefef;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    h3 {
+      font-size: 1.6rem;
+      font-weight: 500;
+      line-height: 2.2rem;
     }
-    .chattingRoomBody {
-        height: calc(100% - 15.2rem);
-        width: 100%;
-        overflow: auto;
-        display: flex;
-        flex-direction: column;
-        .dateTime {
-            text-align: center;
-            padding: 2rem 1.6rem;
-            color: rgba(0, 0, 0, 0.87);
-            font-size: 1.5rem;
-            font-weight: 400;
-            line-height: 2.1rem;
+    .shortcut {
+      display: flex;
+      align-items: center;
+      gap: 3.5rem;
+      margin-left: auto;
+      li {
+        text-indent: -999999px;
+        color: transparent;
+        font-size: 0;
+        width: 3.6rem;
+        height: 3.6rem;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        &.call {
+          background-image: url(../../../../images/icon_call.svg);
         }
+        &.video {
+          background-image: url(../../../../images/icon_video.svg);
+        }
+        &.translate {
+          background-image: url(../../../../images/translate_off.svg);
+          &.on {
+            background-image: url(../../../../images/translate_on.svg);
+          }
+        }
+        &.more {
+          background-image: url(../../../../images/icon_more.svg);
+        }
+      }
     }
+  }
+  .chattingRoomBody {
+    height: calc(100% - 15.2rem);
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    .dateTime {
+      text-align: center;
+      padding: 2rem 1.6rem;
+      color: rgba(0, 0, 0, 0.87);
+      font-size: 1.5rem;
+      font-weight: 400;
+      line-height: 2.1rem;
+    }
+  }
 }
 .msgBox {
-    max-width: 60rem;
-    padding: 0.4rem 1.6rem;
-    font-size: 1.6rem;
-    font-weight: 400;
-    line-height: 2.2rem;
-    position: relative;
-    display: flex;
-    align-items: flex-end;
-    gap: 0.7rem;
-    margin-bottom: 0.8rem;
-    .name {
-        font-size: 1.2rem;
-        line-height: 1.3rem;
-        margin-bottom: 0.4rem;
-        position: absolute;
-        top: 0;
-        left: 7.2rem;
+  max-width: 60rem;
+  padding: 0.4rem 1.6rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.2rem;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  gap: 0.7rem;
+  margin-bottom: 0.8rem;
+  .name {
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+    margin-bottom: 0.4rem;
+    position: absolute;
+    top: 0;
+    left: 7.2rem;
+  }
+  .time {
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+  }
+  .num {
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    color: #27bfb0;
+    margin-bottom: 0.4rem;
+  }
+  .global {
+    flex-shrink: 0;
+    width: 1.3rem;
+    height: 1.3rem;
+    background: url(../../../../images/icon_global.svg) no-repeat center;
+  }
+  .msg {
+    padding: 0.8rem 1.6rem;
+    border-radius: 1.6rem;
+    background: rgba(27, 189, 200, 0.38);
+    width: auto;
+    display: inline-block;
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  }
+  .noti {
+    max-width: 28rem;
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 1.6rem;
+    margin-right: 1rem;
+    h5 {
+      width: 100%;
+      padding: 0.4rem 1.6rem;
+      border-radius: 1.6rem 1.6rem 0 0;
+      color: #fff;
+      font-weight: 500;
+      background: #27bfb0;
     }
-    .time {
-        font-size: 1.1rem;
-        line-height: 1.3rem;
+    .notiMsg {
+      padding: 2.4rem 1.6rem;
     }
-    .num {
-        font-size: 1.1rem;
-        line-height: 1.3rem;
-        color: #27bfb0;
-        margin-bottom: 0.4rem;
+    .notiBtn {
+      cursor: pointer;
+      height: 4rem;
+      padding: 0 1.6rem 0 5rem;
+      border-radius: 0 0 1.6rem 1.6rem;
+      font-weight: 500;
+      line-height: 4rem;
+      background: url(../../../../images/icon_memo.svg) no-repeat left 2.1rem center;
+      border-top: 1px solid rgba(0, 0, 0, 0.12);
     }
-    .global {
-        flex-shrink: 0;
-        width: 1.3rem;
-        height: 1.3rem;
-        background: url(../../../../images/icon_global.svg) no-repeat center;
+  }
+  &.yourMsg {
+    padding-left: 7.2rem;
+    padding-top: 2.1rem;
+    .profileBox {
+      position: absolute;
+      top: 0.4rem;
+      left: 1.3rem;
     }
     .msg {
-        padding: 0.8rem 1.6rem;
-        border-radius: 1.6rem;
-        background: rgba(27, 189, 200, 0.38);
-        width: auto;
-        display: inline-block;
-        box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.12);
+      background: #efefef;
+      border-radius: 1.2rem;
     }
-    .noti {
-        max-width: 28rem;
-        box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.12);
-        border-radius: 1.6rem;
-        margin-right: 1rem;
-        h5 {
-            width: 100%;
-            padding: 0.4rem 1.6rem;
-            border-radius: 1.6rem 1.6rem 0 0;
-            color: #fff;
-            font-weight: 500;
-            background: #27bfb0;
-        }
-        .notiMsg {
-            padding: 2.4rem 1.6rem;
-        }
-        .notiBtn {
-            cursor: pointer;
-            height: 4rem;
-            padding: 0 1.6rem 0 5rem;
-            border-radius: 0 0 1.6rem 1.6rem;
-            font-weight: 500;
-            line-height: 4rem;
-            background: url(../../../../images/icon_memo.svg) no-repeat left
-                2.1rem center;
-            border-top: 1px solid rgba(0, 0, 0, 0.12);
-        }
+  }
+  &.myMsg {
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+    margin-left: auto;
+    .info {
+      text-align: right;
     }
-    &.yourMsg {
-        padding-left: 7.2rem;
-        padding-top: 2.1rem;
-        .profileBox {
-            position: absolute;
-            top: 0.4rem;
-            left: 1.3rem;
-        }
-        .msg {
-            background: #efefef;
-            border-radius: 1.2rem;
-        }
-    }
-    &.myMsg {
-        justify-content: flex-start;
-        flex-direction: row-reverse;
-        margin-left: auto;
-        .info {
-            text-align: right;
-        }
-    }
+  }
 }

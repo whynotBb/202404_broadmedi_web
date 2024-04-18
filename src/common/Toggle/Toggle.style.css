@@ -1,15 +1,16 @@
 .toggleWrap {
-    input[type="checkbox"] {
-        display: none;
-    }
-    label {
-        cursor: pointer;
-        width: 5rem;
-        height: 3rem;
-        display: block;
-        background: url(../../images/toggle_off.svg) no-repeat center;
-    }
-    input[type="checkbox"]:checked ~ label {
-        background: none;
-    }
+  input[type='checkbox'] {
+    display: none;
+  }
+  label {
+    cursor: pointer;
+    width: 5rem;
+    height: 3rem;
+    display: block;
+    background: url(../../images/toggle_off.svg) no-repeat center;
+    transition: all 0.3s;
+  }
+  input[type='checkbox']:checked ~ label {
+    background: url(../../images/toggle_on.svg) no-repeat center;
+  }
 }
