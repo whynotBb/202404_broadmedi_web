@@ -1,13 +1,11 @@
 .bodyWrapper {
   max-width: 198rem;
-  /* min-width: 102rem; */
-  /* width: 198rem; */
+  background: #fff;
   margin: 0 auto;
   display: flex;
   color: #000;
   height: 100vh;
-  border-left: 1px solid rgba(0, 0, 0, 0.2);
-  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  position: relative;
 }
 .title {
   width: 100%;

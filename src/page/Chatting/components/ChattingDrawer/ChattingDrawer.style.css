@@ -257,7 +257,7 @@
 }
 
 .postDetailWrap {
-  padding: 3rem 12rem 0;
+  padding: 3rem 12rem 1rem;
 }
 .postDetailWrap .postTitle {
   line-height: 5.2rem;

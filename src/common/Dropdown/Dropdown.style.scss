@@ -12,7 +12,7 @@
     width: 100%;
     cursor: pointer;
     &::before {
-      content: "";
+      content: '';
       width: 1.5rem;
       height: 1.5rem;
       background: url(../../images/icon_dropdown.svg);
@@ -67,6 +67,7 @@
     }
     ul {
       width: 19rem;
+      top: 4rem;
       li {
         height: 4rem;
         line-height: 4rem;

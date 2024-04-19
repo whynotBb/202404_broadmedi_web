@@ -7,6 +7,8 @@
   height: 100%;
   border-left: 1px solid rgba(0, 0, 0, 0.2);
   border-right: 1px solid rgba(0, 0, 0, 0.2);
+  height: 100vh;
+  overflow: hidden;
   @media (max-width: 1440px) {
     width: calc(100% - 38rem);
   }
@@ -15,6 +17,9 @@
   }
   @media (max-width: 1200px) {
     width: calc(100% - 8rem);
+  }
+  .fc-scroller {
+    height: auto !important;
   }
   .title {
     font-size: 2.8rem;
@@ -34,8 +39,10 @@
     background: url(../../../../images/icon_close.svg) no-repeat center;
   }
   .calendarWrap {
+    height: calc(100vh - 7.6rem);
+    overflow-y: auto;
     .fc {
-      font-family: "Noto Sans KR", sans-serif;
+      font-family: 'Noto Sans KR', sans-serif;
       .fc-toolbar {
         justify-content: flex-end;
         flex-direction: row-reverse;
@@ -100,8 +107,12 @@
           font-weight: 700;
         }
       }
+      .fc-scrollgrid-section-liquid > td {
+        height: calc(100vh - 23rem);
+      }
     }
   }
+
   .fc-theme-standard td,
   .fc-theme-standard th {
     border: none;

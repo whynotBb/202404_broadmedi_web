@@ -1,17 +1,20 @@
-import { useState } from "react";
-import "./Dropdown.style.css";
-const Dropdown = ({ placeholder, optionData, size }) => {
+import {useState} from 'react';
+import './Dropdown.style.css';
+const Dropdown = ({placeholder, optionData, size}) => {
   // 화면 확인을 위해 여닫기만 구현하였습니다.
   const [isOpen, setIsOpen] = useState(false);
 
   const dropdownHandler = () => {
     setIsOpen((current) => !current);
   };
+  const closeDropdown = () => {
+    setIsOpen(false);
+  };
 
   return (
-    <div className={`dropdownBox ${isOpen ? "on" : ""} ${size}`}>
+    <div className={`dropdownBox ${isOpen ? 'on' : ''} ${size}`} onMouseLeave={closeDropdown}>
       <p onClick={dropdownHandler}>{placeholder}</p>
-      <ul className={`${isOpen ? "on" : ""}`}>
+      <ul className={`${isOpen ? 'on' : ''}`}>
         {optionData ? (
           optionData.map((option, index) => (
             <li onClick={dropdownHandler} key={index}>

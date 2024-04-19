@@ -71,7 +71,7 @@
         position: relative;
         &.btn_profile {
           &::before {
-            content: "";
+            content: '';
             display: block;
             position: absolute;
             width: 4rem;
@@ -83,7 +83,7 @@
             transform: translateX(-50%);
           }
           &::after {
-            content: "";
+            content: '';
             display: block;
             position: absolute;
             width: 4rem;
@@ -91,13 +91,11 @@
             top: 0;
             left: 50%;
             transform: translateX(-50%);
-            background: url(../../../../images/profile_user.svg) no-repeat
-              center;
+            background: url(../../../../images/profile_user.svg) no-repeat center;
           }
         }
         &.btn_alarm {
-          background: url(../../../../images/icon_alarm.svg) no-repeat center
-            top;
+          background: url(../../../../images/icon_alarm.svg) no-repeat center top;
         }
       }
     }
@@ -131,8 +129,7 @@
       padding: 1.1rem 0;
       font-weight: 500;
       line-height: 2.2rem;
-      background: url(../../../../images/icon_arrow_right.svg) no-repeat right
-        center;
+      background: url(../../../../images/icon_arrow_right.svg) no-repeat right center;
     }
   }
   .drawerBottom {
@@ -254,7 +251,7 @@
   }
 }
 .postDetailWrap {
-  padding: 3rem 12rem 0;
+  padding: 3rem 12rem 1rem;
   .postTitle {
     line-height: 5.2rem;
     color: rgba(0, 0, 0, 0.87);

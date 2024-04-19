@@ -109,6 +109,38 @@
     width: auto;
     display: inline-block;
     box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.12);
+    &.file {
+      padding: 0.8rem 1.6rem 3.7rem;
+      position: relative;
+      max-width: 24.8rem;
+      word-break: break-all;
+      .fileInfo {
+        color: rgba(0, 0, 0, 0.6);
+        font-size: 1.3rem;
+        position: absolute;
+        bottom: 0.8rem;
+        right: 1.6rem;
+      }
+    }
+    &.photo {
+      padding: 0.5rem;
+      max-width: 24rem;
+      max-height: 24rem;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        border-radius: 1.6rem;
+        overflow: hidden;
+      }
+    }
+    &.callDetails {
+      min-width: 15rem;
+      text-align: right;
+      padding-left: 3.6rem;
+      box-shadow: none;
+      background: #fff url(../../../../images/icon_call_sm.svg) no-repeat left 1.6rem center !important;
+    }
   }
   .noti {
     max-width: 28rem;
@@ -133,8 +165,7 @@
       border-radius: 0 0 1.6rem 1.6rem;
       font-weight: 500;
       line-height: 4rem;
-      background: url(../../../../images/icon_memo.svg) no-repeat left 2.1rem
-        center;
+      background: url(../../../../images/icon_memo.svg) no-repeat left 2.1rem center;
       border-top: 1px solid rgba(0, 0, 0, 0.12);
     }
   }
@@ -149,6 +180,9 @@
     .msg {
       background: #efefef;
       border-radius: 1.2rem;
+      &.file {
+        background: #fff;
+      }
     }
   }
   &.myMsg {

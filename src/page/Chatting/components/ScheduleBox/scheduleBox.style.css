@@ -7,6 +7,8 @@
   height: 100%;
   border-left: 1px solid rgba(0, 0, 0, 0.2);
   border-right: 1px solid rgba(0, 0, 0, 0.2);
+  height: 100vh;
+  overflow: hidden;
 }
 @media (max-width: 1440px) {
   .scheduleBoxWrap {
@@ -22,6 +24,9 @@
   .scheduleBoxWrap {
     width: calc(100% - 8rem);
   }
+}
+.scheduleBoxWrap .fc-scroller {
+  height: auto !important;
 }
 .scheduleBoxWrap .title {
   font-size: 2.8rem;
@@ -39,6 +44,10 @@
   width: 3.2rem;
   height: 3.2rem;
   background: url(../../../../images/icon_close.svg) no-repeat center;
+}
+.scheduleBoxWrap .calendarWrap {
+  height: calc(100vh - 7.6rem);
+  overflow-y: auto;
 }
 .scheduleBoxWrap .calendarWrap .fc {
   font-family: "Noto Sans KR", sans-serif;
@@ -105,6 +114,9 @@
 .scheduleBoxWrap .calendarWrap .fc .fc-day-today .fc-daygrid-day-number {
   color: #1bbdc8;
   font-weight: 700;
+}
+.scheduleBoxWrap .calendarWrap .fc .fc-scrollgrid-section-liquid > td {
+  height: calc(100vh - 23rem);
 }
 .scheduleBoxWrap .fc-theme-standard td,
 .scheduleBoxWrap .fc-theme-standard th {
