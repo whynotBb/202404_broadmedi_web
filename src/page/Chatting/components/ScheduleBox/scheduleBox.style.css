@@ -107,6 +107,7 @@
 }
 .scheduleBoxWrap .calendarWrap .fc table .fc-daygrid-day-top {
   justify-content: center;
+  cursor: pointer;
 }
 .scheduleBoxWrap .calendarWrap .fc .fc-day-today {
   background-color: transparent;
@@ -117,13 +118,14 @@
 }
 .scheduleBoxWrap .calendarWrap .fc .fc-scrollgrid-section-liquid > td {
   height: calc(100vh - 23rem);
+  cursor: pointer;
+}
+.scheduleBoxWrap .calendarWrap .fc .fc-daygrid-day-frame {
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .scheduleBoxWrap .fc-theme-standard td,
 .scheduleBoxWrap .fc-theme-standard th {
   border: none;
-}
-.scheduleBoxWrap .fc-theme-standard th {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.12) !important;
 }
 .scheduleBoxWrap .fc-theme-standard .fc-scrollgrid {
   border-left: none;
@@ -134,6 +136,15 @@
 }
 .scheduleBoxWrap .fc-h-event .fc-event-main {
   background-color: #3273dc;
+  cursor: pointer;
   font-weight: 400;
   text-align: center;
+}
+.scheduleBoxWrap .customPositionModal {
+  position: absolute;
+  z-index: 10;
+}
+.scheduleBoxWrap .customPositionModal .modalContents {
+  position: initial;
+  transform: none;
 }

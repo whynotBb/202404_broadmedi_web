@@ -9,39 +9,62 @@ import {useState} from 'react';
 import interactionPlugin from '@fullcalendar/interaction';
 import ScheduleForm from './ScheduleForm';
 import Button from '../../../../common/Button/Button';
+import ScheduleDetail from './ScheduleDetail';
 
 const ScheduleBox = ({close}) => {
+  const [coordX, setCoordX] = useState(0);
+  const [coordY, setCoordY] = useState(0);
+  const handleClick = (event) => {
+    const x = event.clientX;
+    const y = event.clientY;
+    setCoordX(x);
+    setCoordY(y);
+    // console.log(`Clicked at coordinates: (${x}, ${y})`);
+  };
   const [modalOpen, setModalOpen] = useState(false);
   const modalCloseHandler = () => {
     setModalOpen(false);
   };
+  const [modalOpen2, setModalOpen2] = useState(false);
+  const modalCloseHandler2 = () => {
+    setModalOpen2(false);
+  };
+
   const handleDateClick = (arg) => {
+    if (modalOpen2) {
+      setModalOpen2(false);
+    }
+
+    if (coordY > 300 && coordY < 400) {
+      setCoordY(coordY - 130);
+    } else if (coordY > 400 && coordY < 560) {
+      setCoordY(coordY - 280);
+    } else if (coordY > 560) {
+      setCoordY(150);
+    }
+    if (coordX > 580) {
+      setCoordX(coordX - 550);
+    }
     setModalOpen(true);
   };
 
-  // useEffect(() => {
-  //   fixDayNumbers();
-  // }, []);
-  // const fixDayNumbers = () => {
-  //   const dayNumberElements = document.querySelectorAll(
-  //     ".fc-daygrid-day-number"
-  //   );
-  //   dayNumberElements.forEach((dayNumberElement) => {
-  //     let day = dayNumberElement.textContent;
-  //     day = day.replace("일", "");
-  //     dayNumberElement.textContent = day;
-  //   });
-  // };
-  const events = [
-    {title: 'Meeting', start: '2024-04-20'},
-    // {
-    //   title: "Meeting",
-    //   start: "2024-04-10T10:00:00",
-    //   end: "2024-11-12T16:00:00",
-    //   display: "background",
-    //   color: "#ff9f89",
-    // },
-  ];
+  const handleEventClick = (eventInfo) => {
+    if (modalOpen) {
+      setModalOpen(false);
+    }
+    if (coordY > 300 && coordY < 400) {
+      setCoordY(coordY - 130);
+    } else if (coordY > 400 && coordY < 560) {
+      setCoordY(coordY - 280);
+    } else if (coordY > 560) {
+      setCoordY(150);
+    }
+    if (coordX > 580) {
+      setCoordX(coordX - 550);
+    }
+    setModalOpen2(true);
+  };
+  const events = [{title: 'Meeting', start: '2024-04-20'}];
   function renderEventContent(eventInfo) {
     return (
       <div className='evnetBar'>
@@ -51,7 +74,7 @@ const ScheduleBox = ({close}) => {
     );
   }
   return (
-    <div className='scheduleBoxWrap'>
+    <div className='scheduleBoxWrap' onClick={handleClick}>
       <h2 className='title'>
         일정
         <button className='close' onClick={close}>
@@ -68,18 +91,27 @@ const ScheduleBox = ({close}) => {
           dateClick={handleDateClick}
           events={events}
           eventContent={renderEventContent}
+          eventClick={handleEventClick}
         />
       </div>
-      <Modal className={modalOpen ? 'open' : ''} openModalHandler={modalCloseHandler} size='md'>
-        <div className='modalScrollBox'>
-          <ScheduleForm />
-          <div className='btnRight'>
-            <Button type='primary' fn={modalCloseHandler}>
-              저장
-            </Button>
+      <div className='customPositionModal' style={{top: coordY, left: coordX}}>
+        <Modal className={modalOpen ? 'open' : ''} openModalHandler={modalCloseHandler} size='md' type='noneDim'>
+          <div className='modalScrollBox'>
+            <ScheduleForm />
+            <div className='btnRight'>
+              <Button type='primary' fn={modalCloseHandler}>
+                저장
+              </Button>
+            </div>
           </div>
-        </div>
-      </Modal>
+        </Modal>
+      </div>
+
+      <div className='customPositionModal' style={{top: coordY, left: coordX}}>
+        <Modal className={modalOpen2 ? 'open' : ''} openModalHandler={modalCloseHandler2} size='md' type='noneDim'>
+          <ScheduleDetail />
+        </Modal>
+      </div>
     </div>
   );
 };

@@ -1,5 +1,6 @@
 .formWrap {
   padding: 0 6.2rem;
+  position: relative;
 }
 .formWrap em {
   color: #ff3860;
@@ -88,6 +89,17 @@
 }
 .formWrap .formItem.row .formItem.col {
   flex: 1;
+}
+.formWrap .formItem.dateTimeItem {
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+.formWrap .formItem.dateTimeItem .dateTime {
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.1rem;
+  gap: 0.8rem;
 }
 .formWrap hr.dashed {
   border: none;
@@ -257,4 +269,86 @@
   line-height: 2.2rem;
   width: 100%;
   height: 14.6rem;
+}
+.formWrap .contentsBox {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 0.4rem;
+  padding: 0.8rem;
+  line-height: 2.2rem;
+  color: rgba(0, 0, 0, 0.87);
+  height: 22.7rem;
+  overflow-y: auto;
+}
+.formWrap .editBox {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: -4.1rem;
+  right: 7rem;
+  gap: 2rem;
+}
+.formWrap .editBox span {
+  width: 2rem;
+  height: 2rem;
+  font-size: 0;
+  color: transparent;
+  text-indent: -999999px;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.formWrap .editBox span.modify {
+  background-image: url(../../images/icon_modify.svg);
+}
+.formWrap .editBox span.del {
+  background-image: url(../../images/icon_del.svg);
+}
+.formWrap .category {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.3rem;
+  margin-bottom: 0.3rem;
+}
+.formWrap .location {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+  width: 100%;
+}
+.formWrap .location .pin {
+  width: 3.8rem;
+  height: 3.8rem;
+  font-size: 0;
+  color: transparent;
+  text-indent: -999999px;
+  background: url(../../images/icon_pin_primary.svg) no-repeat center;
+}
+.formWrap .location input[type=text] {
+  flex: 1;
+}
+.formWrap .location input[type=text]:-moz-read-only {
+  background-color: #fff;
+}
+.formWrap .location input[type=text]:read-only {
+  background-color: #fff;
+}
+.formWrap .scheduleTitle {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.87);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.formWrap .scheduleTitle .more {
+  cursor: pointer;
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  font-size: 0;
+  color: transparent;
+  text-indent: -999999px;
+  background: url(../../images/icon_more_vertical.svg) no-repeat center;
 }

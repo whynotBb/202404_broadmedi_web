@@ -98,6 +98,7 @@
         }
         .fc-daygrid-day-top {
           justify-content: center;
+          cursor: pointer;
         }
       }
       .fc-day-today {
@@ -109,6 +110,10 @@
       }
       .fc-scrollgrid-section-liquid > td {
         height: calc(100vh - 23rem);
+        cursor: pointer;
+      }
+      .fc-daygrid-day-frame {
+        border: 1px solid rgba(0, 0, 0, 0.1);
       }
     }
   }
@@ -117,9 +122,7 @@
   .fc-theme-standard th {
     border: none;
   }
-  .fc-theme-standard th {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.12) !important;
-  }
+
   .fc-theme-standard .fc-scrollgrid {
     border-left: none;
   }
@@ -129,7 +132,16 @@
   }
   .fc-h-event .fc-event-main {
     background-color: #3273dc;
+    cursor: pointer;
     font-weight: 400;
     text-align: center;
+  }
+  .customPositionModal {
+    position: absolute;
+    z-index: 10;
+    .modalContents {
+      position: initial;
+      transform: none;
+    }
   }
 }
