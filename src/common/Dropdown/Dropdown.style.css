@@ -78,3 +78,6 @@
 .dropdownBox.sm ul {
   width: 9.8rem;
 }
+.dropdownBox.w_100 {
+  width: 100%;
+}
